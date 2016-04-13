@@ -7,14 +7,62 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEB1EB371CB3BA0500843717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB361CB3BA0500843717 /* main.m */; };
-		AEB1EB3A1CB3BA0500843717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB391CB3BA0500843717 /* AppDelegate.m */; };
-		AEB1EB3D1CB3BA0500843717 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB3C1CB3BA0500843717 /* ViewController.m */; };
-		AEB1EB401CB3BA0500843717 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB1EB3E1CB3BA0500843717 /* Main.storyboard */; };
+		035EC238BE0649A74F83F269 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF66A8E1F772EAF974DE8EB4 /* libPods.a */; };
+		AE4C95661CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C95641CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m */; };
+		AE4C95671CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4C95651CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib */; };
+		AE4C956B1CBDE16D00A578AC /* LKChangeThePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C95691CBDE16D00A578AC /* LKChangeThePasswordViewController.m */; };
+		AE4C956C1CBDE16D00A578AC /* LKChangeThePasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4C956A1CBDE16D00A578AC /* LKChangeThePasswordViewController.xib */; };
+		AE4C95701CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C956E1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m */; };
+		AE4C95711CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4C956F1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.xib */; };
+		AE4C95791CBE1FD600A578AC /* LKDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C95771CBE1FD600A578AC /* LKDetailsViewController.m */; };
+		AE4C957A1CBE1FD600A578AC /* LKDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4C95781CBE1FD600A578AC /* LKDetailsViewController.xib */; };
+		AE4C957D1CBE377300A578AC /* LKLadderRatesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C957C1CBE377300A578AC /* LKLadderRatesViewController.m */; };
+		AE4C95961CBE466300A578AC /* LKBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C95941CBE466300A578AC /* LKBuyViewController.m */; };
+		AE4C95971CBE466300A578AC /* LKBuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4C95951CBE466300A578AC /* LKBuyViewController.xib */; };
+		AE58DC2F1CBB9F83007DEB20 /* LKProductListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE58DC2D1CBB9F83007DEB20 /* LKProductListTableViewCell.m */; };
+		AE58DC301CBB9F83007DEB20 /* LKProductListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE58DC2E1CBB9F83007DEB20 /* LKProductListTableViewCell.xib */; };
+		AE5A25981CB5EFB000C827BB /* LKMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A25961CB5EFB000C827BB /* LKMyAccountViewController.m */; };
+		AE5A25991CB5EFB000C827BB /* LKMyAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5A25971CB5EFB000C827BB /* LKMyAccountViewController.xib */; };
+		AE5A259B1CB5F7F400C827BB /* AssetsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5A259A1CB5F7F400C827BB /* AssetsViewController.xib */; };
+		AE5A25A31CB62C9D00C827BB /* LKFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A25A11CB62C9D00C827BB /* LKFocusViewController.m */; };
+		AE5A25A41CB62C9D00C827BB /* LKFocusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5A25A21CB62C9D00C827BB /* LKFocusViewController.xib */; };
+		AE5A25AC1CB635D000C827BB /* LKAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5A25AA1CB635D000C827BB /* LKAboutViewController.m */; };
+		AE5A25AD1CB635D000C827BB /* LKAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5A25AB1CB635D000C827BB /* LKAboutViewController.xib */; };
+		AE5CB7B71CBC9CCB00D00A79 /* LKLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5CB7B51CBC9CCB00D00A79 /* LKLoginViewController.m */; };
+		AE5CB7B81CBC9CCB00D00A79 /* LKLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5CB7B61CBC9CCB00D00A79 /* LKLoginViewController.xib */; };
+		AE5CB7BB1CBCBF7400D00A79 /* CALayer+LKXibConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5CB7BA1CBCBF7400D00A79 /* CALayer+LKXibConfiguration.m */; };
+		AE5CB7BF1CBCC8DC00D00A79 /* LKRegisteredViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5CB7BD1CBCC8DC00D00A79 /* LKRegisteredViewController.m */; };
+		AE5CB7C01CBCC8DC00D00A79 /* LKRegisteredViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5CB7BE1CBCC8DC00D00A79 /* LKRegisteredViewController.xib */; };
+		AE5CB7C41CBCD3AF00D00A79 /* LKForgotPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5CB7C21CBCD3AF00D00A79 /* LKForgotPasswordViewController.m */; };
+		AE5CB7C51CBCD3AF00D00A79 /* LKForgotPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE5CB7C31CBCD3AF00D00A79 /* LKForgotPasswordViewController.xib */; };
+		AE5CB7CC1CBCDDF300D00A79 /* LKRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE5CB7CB1CBCDDF300D00A79 /* LKRecordViewController.m */; };
+		AE865D571CB49E62008A8982 /* LKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D561CB49E62008A8982 /* LKTabBarController.m */; };
+		AE865D5A1CB49ED6008A8982 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D591CB49ED6008A8982 /* MyViewController.m */; };
+		AE865D5D1CB49F43008A8982 /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D5C1CB49F43008A8982 /* AssetsViewController.m */; };
+		AE865D601CB49F60008A8982 /* InvestmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D5F1CB49F60008A8982 /* InvestmentViewController.m */; };
+		AE865D631CB4A094008A8982 /* LKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D621CB4A094008A8982 /* LKNavigationController.m */; };
+		AE865D6D1CB4A1FA008A8982 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D661CB4A1FA008A8982 /* Foundation+Log.m */; };
+		AE865D6E1CB4A1FA008A8982 /* NSDate+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D681CB4A1FA008A8982 /* NSDate+LKExtension.m */; };
+		AE865D6F1CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D6A1CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.m */; };
+		AE865D701CB4A1FA008A8982 /* UIView+LKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D6C1CB4A1FA008A8982 /* UIView+LKExtension.m */; };
+		AE865D731CB4A282008A8982 /* LKConst.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D721CB4A282008A8982 /* LKConst.m */; };
+		AE865D751CB4B4B9008A8982 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE865D741CB4B4B9008A8982 /* MyViewController.xib */; };
+		AE865D791CB4D821008A8982 /* LKMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D771CB4D821008A8982 /* LKMyTableViewCell.m */; };
+		AE865D7A1CB4D821008A8982 /* LKMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE865D781CB4D821008A8982 /* LKMyTableViewCell.xib */; };
 		AEB1EB421CB3BA0500843717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB1EB411CB3BA0500843717 /* Assets.xcassets */; };
 		AEB1EB451CB3BA0500843717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB1EB431CB3BA0500843717 /* LaunchScreen.storyboard */; };
 		AEB1EB501CB3BA0500843717 /* zhaoCaiTongZiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB4F1CB3BA0500843717 /* zhaoCaiTongZiTests.m */; };
 		AEB1EB5B1CB3BA0500843717 /* zhaoCaiTongZiUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB5A1CB3BA0500843717 /* zhaoCaiTongZiUITests.m */; };
+		AEB1EB961CB3BB5200843717 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB901CB3BB5200843717 /* AppDelegate.m */; };
+		AEB1EB971CB3BB5200843717 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB921CB3BB5200843717 /* main.m */; };
+		AEB1EB981CB3BB5200843717 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AEB1EB951CB3BB5200843717 /* Info.plist */; };
+		AEB1EBA11CB3C02F00843717 /* selectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB9F1CB3C02F00843717 /* selectViewController.m */; };
+		AEB1EBA21CB3C02F00843717 /* selectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEB1EBA01CB3C02F00843717 /* selectViewController.xib */; };
+		AEE16A8B1CB75B280051B0B9 /* LKHelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE16A8A1CB75B280051B0B9 /* LKHelpViewController.m */; };
+		AEE16A971CB780510051B0B9 /* LKTopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE16A951CB780510051B0B9 /* LKTopUpViewController.m */; };
+		AEE16A981CB780510051B0B9 /* LKTopUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE16A961CB780510051B0B9 /* LKTopUpViewController.xib */; };
+		AEE16A9C1CB7955B0051B0B9 /* LKWithdrawalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE16A9A1CB7955B0051B0B9 /* LKWithdrawalViewController.m */; };
+		AEE16A9D1CB7955B0051B0B9 /* LKWithdrawalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEE16A9B1CB7955B0051B0B9 /* LKWithdrawalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,22 +83,100 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F83C90203D6F3F6AC4DFD0C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		74D0165434718BB5B124C3AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AE4C95631CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKModifyTheCellPhoneNumberViewController.h; sourceTree = "<group>"; };
+		AE4C95641CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKModifyTheCellPhoneNumberViewController.m; sourceTree = "<group>"; };
+		AE4C95651CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKModifyTheCellPhoneNumberViewController.xib; sourceTree = "<group>"; };
+		AE4C95681CBDE16D00A578AC /* LKChangeThePasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKChangeThePasswordViewController.h; sourceTree = "<group>"; };
+		AE4C95691CBDE16D00A578AC /* LKChangeThePasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKChangeThePasswordViewController.m; sourceTree = "<group>"; };
+		AE4C956A1CBDE16D00A578AC /* LKChangeThePasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKChangeThePasswordViewController.xib; sourceTree = "<group>"; };
+		AE4C956D1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTheIdentityAuthenticationViewController.h; sourceTree = "<group>"; };
+		AE4C956E1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTheIdentityAuthenticationViewController.m; sourceTree = "<group>"; };
+		AE4C956F1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKTheIdentityAuthenticationViewController.xib; sourceTree = "<group>"; };
+		AE4C95761CBE1FD600A578AC /* LKDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKDetailsViewController.h; sourceTree = "<group>"; };
+		AE4C95771CBE1FD600A578AC /* LKDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKDetailsViewController.m; sourceTree = "<group>"; };
+		AE4C95781CBE1FD600A578AC /* LKDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKDetailsViewController.xib; sourceTree = "<group>"; };
+		AE4C957B1CBE377300A578AC /* LKLadderRatesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLadderRatesViewController.h; sourceTree = "<group>"; };
+		AE4C957C1CBE377300A578AC /* LKLadderRatesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLadderRatesViewController.m; sourceTree = "<group>"; };
+		AE4C95931CBE466300A578AC /* LKBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKBuyViewController.h; sourceTree = "<group>"; };
+		AE4C95941CBE466300A578AC /* LKBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKBuyViewController.m; sourceTree = "<group>"; };
+		AE4C95951CBE466300A578AC /* LKBuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKBuyViewController.xib; sourceTree = "<group>"; };
+		AE58DC2C1CBB9F83007DEB20 /* LKProductListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProductListTableViewCell.h; sourceTree = "<group>"; };
+		AE58DC2D1CBB9F83007DEB20 /* LKProductListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProductListTableViewCell.m; sourceTree = "<group>"; };
+		AE58DC2E1CBB9F83007DEB20 /* LKProductListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKProductListTableViewCell.xib; sourceTree = "<group>"; };
+		AE5A25951CB5EFB000C827BB /* LKMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMyAccountViewController.h; sourceTree = "<group>"; };
+		AE5A25961CB5EFB000C827BB /* LKMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMyAccountViewController.m; sourceTree = "<group>"; };
+		AE5A25971CB5EFB000C827BB /* LKMyAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKMyAccountViewController.xib; sourceTree = "<group>"; };
+		AE5A259A1CB5F7F400C827BB /* AssetsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AssetsViewController.xib; sourceTree = "<group>"; };
+		AE5A25A01CB62C9D00C827BB /* LKFocusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKFocusViewController.h; sourceTree = "<group>"; };
+		AE5A25A11CB62C9D00C827BB /* LKFocusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKFocusViewController.m; sourceTree = "<group>"; };
+		AE5A25A21CB62C9D00C827BB /* LKFocusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKFocusViewController.xib; sourceTree = "<group>"; };
+		AE5A25A91CB635D000C827BB /* LKAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKAboutViewController.h; sourceTree = "<group>"; };
+		AE5A25AA1CB635D000C827BB /* LKAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKAboutViewController.m; sourceTree = "<group>"; };
+		AE5A25AB1CB635D000C827BB /* LKAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKAboutViewController.xib; sourceTree = "<group>"; };
+		AE5CB7B41CBC9CCB00D00A79 /* LKLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKLoginViewController.h; sourceTree = "<group>"; };
+		AE5CB7B51CBC9CCB00D00A79 /* LKLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKLoginViewController.m; sourceTree = "<group>"; };
+		AE5CB7B61CBC9CCB00D00A79 /* LKLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKLoginViewController.xib; sourceTree = "<group>"; };
+		AE5CB7B91CBCBF7400D00A79 /* CALayer+LKXibConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+LKXibConfiguration.h"; sourceTree = "<group>"; };
+		AE5CB7BA1CBCBF7400D00A79 /* CALayer+LKXibConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+LKXibConfiguration.m"; sourceTree = "<group>"; };
+		AE5CB7BC1CBCC8DC00D00A79 /* LKRegisteredViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKRegisteredViewController.h; sourceTree = "<group>"; };
+		AE5CB7BD1CBCC8DC00D00A79 /* LKRegisteredViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKRegisteredViewController.m; sourceTree = "<group>"; };
+		AE5CB7BE1CBCC8DC00D00A79 /* LKRegisteredViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKRegisteredViewController.xib; sourceTree = "<group>"; };
+		AE5CB7C11CBCD3AF00D00A79 /* LKForgotPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKForgotPasswordViewController.h; sourceTree = "<group>"; };
+		AE5CB7C21CBCD3AF00D00A79 /* LKForgotPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKForgotPasswordViewController.m; sourceTree = "<group>"; };
+		AE5CB7C31CBCD3AF00D00A79 /* LKForgotPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKForgotPasswordViewController.xib; sourceTree = "<group>"; };
+		AE5CB7CA1CBCDDF300D00A79 /* LKRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKRecordViewController.h; sourceTree = "<group>"; };
+		AE5CB7CB1CBCDDF300D00A79 /* LKRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKRecordViewController.m; sourceTree = "<group>"; };
+		AE865D551CB49E62008A8982 /* LKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTabBarController.h; sourceTree = "<group>"; };
+		AE865D561CB49E62008A8982 /* LKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTabBarController.m; sourceTree = "<group>"; };
+		AE865D581CB49ED6008A8982 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		AE865D591CB49ED6008A8982 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		AE865D5B1CB49F43008A8982 /* AssetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssetsViewController.h; sourceTree = "<group>"; };
+		AE865D5C1CB49F43008A8982 /* AssetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssetsViewController.m; sourceTree = "<group>"; };
+		AE865D5E1CB49F60008A8982 /* InvestmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvestmentViewController.h; sourceTree = "<group>"; };
+		AE865D5F1CB49F60008A8982 /* InvestmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvestmentViewController.m; sourceTree = "<group>"; };
+		AE865D611CB4A094008A8982 /* LKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKNavigationController.h; sourceTree = "<group>"; };
+		AE865D621CB4A094008A8982 /* LKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKNavigationController.m; sourceTree = "<group>"; };
+		AE865D641CB4A114008A8982 /* LKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LKPrefixHeader.pch; sourceTree = "<group>"; };
+		AE865D661CB4A1FA008A8982 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		AE865D671CB4A1FA008A8982 /* NSDate+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+LKExtension.h"; sourceTree = "<group>"; };
+		AE865D681CB4A1FA008A8982 /* NSDate+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+LKExtension.m"; sourceTree = "<group>"; };
+		AE865D691CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LKExtension.h"; sourceTree = "<group>"; };
+		AE865D6A1CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LKExtension.m"; sourceTree = "<group>"; };
+		AE865D6B1CB4A1FA008A8982 /* UIView+LKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LKExtension.h"; sourceTree = "<group>"; };
+		AE865D6C1CB4A1FA008A8982 /* UIView+LKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LKExtension.m"; sourceTree = "<group>"; };
+		AE865D711CB4A282008A8982 /* LKConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKConst.h; sourceTree = "<group>"; };
+		AE865D721CB4A282008A8982 /* LKConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKConst.m; sourceTree = "<group>"; };
+		AE865D741CB4B4B9008A8982 /* MyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyViewController.xib; sourceTree = "<group>"; };
+		AE865D761CB4D821008A8982 /* LKMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMyTableViewCell.h; sourceTree = "<group>"; };
+		AE865D771CB4D821008A8982 /* LKMyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMyTableViewCell.m; sourceTree = "<group>"; };
+		AE865D781CB4D821008A8982 /* LKMyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKMyTableViewCell.xib; sourceTree = "<group>"; };
 		AEB1EB321CB3BA0400843717 /* zhaoCaiTongZi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhaoCaiTongZi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEB1EB361CB3BA0500843717 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AEB1EB381CB3BA0500843717 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		AEB1EB391CB3BA0500843717 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		AEB1EB3B1CB3BA0500843717 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		AEB1EB3C1CB3BA0500843717 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		AEB1EB3F1CB3BA0500843717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEB1EB411CB3BA0500843717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB1EB441CB3BA0500843717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		AEB1EB461CB3BA0500843717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB1EB4B1CB3BA0500843717 /* zhaoCaiTongZiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zhaoCaiTongZiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB1EB4F1CB3BA0500843717 /* zhaoCaiTongZiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zhaoCaiTongZiTests.m; sourceTree = "<group>"; };
 		AEB1EB511CB3BA0500843717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEB1EB561CB3BA0500843717 /* zhaoCaiTongZiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zhaoCaiTongZiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB1EB5A1CB3BA0500843717 /* zhaoCaiTongZiUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = zhaoCaiTongZiUITests.m; sourceTree = "<group>"; };
 		AEB1EB5C1CB3BA0500843717 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEB1EB8F1CB3BB5200843717 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEB1EB901CB3BB5200843717 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEB1EB921CB3BB5200843717 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEB1EB951CB3BB5200843717 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Other/Info.plist; sourceTree = "<group>"; };
+		AEB1EB9E1CB3C02F00843717 /* selectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = selectViewController.h; sourceTree = "<group>"; };
+		AEB1EB9F1CB3C02F00843717 /* selectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = selectViewController.m; sourceTree = "<group>"; };
+		AEB1EBA01CB3C02F00843717 /* selectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = selectViewController.xib; sourceTree = "<group>"; };
+		AEE16A891CB75B280051B0B9 /* LKHelpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKHelpViewController.h; sourceTree = "<group>"; };
+		AEE16A8A1CB75B280051B0B9 /* LKHelpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKHelpViewController.m; sourceTree = "<group>"; };
+		AEE16A941CB780510051B0B9 /* LKTopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTopUpViewController.h; sourceTree = "<group>"; };
+		AEE16A951CB780510051B0B9 /* LKTopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTopUpViewController.m; sourceTree = "<group>"; };
+		AEE16A961CB780510051B0B9 /* LKTopUpViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKTopUpViewController.xib; sourceTree = "<group>"; };
+		AEE16A991CB7955B0051B0B9 /* LKWithdrawalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKWithdrawalViewController.h; sourceTree = "<group>"; };
+		AEE16A9A1CB7955B0051B0B9 /* LKWithdrawalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKWithdrawalViewController.m; sourceTree = "<group>"; };
+		AEE16A9B1CB7955B0051B0B9 /* LKWithdrawalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKWithdrawalViewController.xib; sourceTree = "<group>"; };
+		BF66A8E1F772EAF974DE8EB4 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +184,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				035EC238BE0649A74F83F269 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +205,207 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE4C95721CBE1F5F00A578AC /* details(投资二级页面) */ = {
+			isa = PBXGroup;
+			children = (
+				AE4C95731CBE1F5F00A578AC /* controller */,
+				AE4C95741CBE1F5F00A578AC /* model */,
+				AE4C95751CBE1F5F00A578AC /* view */,
+			);
+			path = "details(投资二级页面)";
+			sourceTree = "<group>";
+		};
+		AE4C95731CBE1F5F00A578AC /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE4C95761CBE1FD600A578AC /* LKDetailsViewController.h */,
+				AE4C95771CBE1FD600A578AC /* LKDetailsViewController.m */,
+				AE4C95781CBE1FD600A578AC /* LKDetailsViewController.xib */,
+				AE4C957B1CBE377300A578AC /* LKLadderRatesViewController.h */,
+				AE4C957C1CBE377300A578AC /* LKLadderRatesViewController.m */,
+				AE4C95931CBE466300A578AC /* LKBuyViewController.h */,
+				AE4C95941CBE466300A578AC /* LKBuyViewController.m */,
+				AE4C95951CBE466300A578AC /* LKBuyViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AE4C95741CBE1F5F00A578AC /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AE4C95751CBE1F5F00A578AC /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AE5A25911CB5EE6000C827BB /* MyAccount(我的账户) */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A25921CB5EE6000C827BB /* controller */,
+				AE5A25931CB5EE6000C827BB /* model */,
+				AE5A25941CB5EE6000C827BB /* view */,
+			);
+			path = "MyAccount(我的账户)";
+			sourceTree = "<group>";
+		};
+		AE5A25921CB5EE6000C827BB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A25951CB5EFB000C827BB /* LKMyAccountViewController.h */,
+				AE5A25961CB5EFB000C827BB /* LKMyAccountViewController.m */,
+				AE5A25971CB5EFB000C827BB /* LKMyAccountViewController.xib */,
+				AE4C95631CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.h */,
+				AE4C95641CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m */,
+				AE4C95651CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib */,
+				AE4C95681CBDE16D00A578AC /* LKChangeThePasswordViewController.h */,
+				AE4C95691CBDE16D00A578AC /* LKChangeThePasswordViewController.m */,
+				AE4C956A1CBDE16D00A578AC /* LKChangeThePasswordViewController.xib */,
+				AE4C956D1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.h */,
+				AE4C956E1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m */,
+				AE4C956F1CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AE5A25931CB5EE6000C827BB /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AE5A25941CB5EE6000C827BB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AE5A259C1CB62BBC00C827BB /* Focus(关注我们) */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A259D1CB62BBC00C827BB /* controller */,
+				AE5A259E1CB62BBC00C827BB /* model */,
+				AE5A259F1CB62BBC00C827BB /* view */,
+			);
+			name = "Focus(关注我们)";
+			path = "focus(关注我们)";
+			sourceTree = "<group>";
+		};
+		AE5A259D1CB62BBC00C827BB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A25A01CB62C9D00C827BB /* LKFocusViewController.h */,
+				AE5A25A11CB62C9D00C827BB /* LKFocusViewController.m */,
+				AE5A25A21CB62C9D00C827BB /* LKFocusViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AE5A259E1CB62BBC00C827BB /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AE5A259F1CB62BBC00C827BB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AE5A25A51CB635A700C827BB /* About(关于童子) */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A25A61CB635A700C827BB /* controller */,
+				AE5A25A71CB635A700C827BB /* model */,
+				AE5A25A81CB635A700C827BB /* view */,
+			);
+			name = "About(关于童子)";
+			path = "about(关于童子)";
+			sourceTree = "<group>";
+		};
+		AE5A25A61CB635A700C827BB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE5A25A91CB635D000C827BB /* LKAboutViewController.h */,
+				AE5A25AA1CB635D000C827BB /* LKAboutViewController.m */,
+				AE5A25AB1CB635D000C827BB /* LKAboutViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AE5A25A71CB635A700C827BB /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AE5A25A81CB635A700C827BB /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AE5CB7C61CBCDD3600D00A79 /* record(交易记录,投资升级,资金退出) */ = {
+			isa = PBXGroup;
+			children = (
+				AE5CB7C71CBCDD3600D00A79 /* controller */,
+				AE5CB7C81CBCDD3600D00A79 /* model */,
+				AE5CB7C91CBCDD3600D00A79 /* view */,
+			);
+			path = "record(交易记录,投资升级,资金退出)";
+			sourceTree = "<group>";
+		};
+		AE5CB7C71CBCDD3600D00A79 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE5CB7CA1CBCDDF300D00A79 /* LKRecordViewController.h */,
+				AE5CB7CB1CBCDDF300D00A79 /* LKRecordViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AE5CB7C81CBCDD3600D00A79 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AE5CB7C91CBCDD3600D00A79 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AE865D651CB4A1FA008A8982 /* Category(分类) */ = {
+			isa = PBXGroup;
+			children = (
+				AE865D661CB4A1FA008A8982 /* Foundation+Log.m */,
+				AE865D671CB4A1FA008A8982 /* NSDate+LKExtension.h */,
+				AE865D681CB4A1FA008A8982 /* NSDate+LKExtension.m */,
+				AE865D691CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.h */,
+				AE865D6A1CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.m */,
+				AE865D6B1CB4A1FA008A8982 /* UIView+LKExtension.h */,
+				AE865D6C1CB4A1FA008A8982 /* UIView+LKExtension.m */,
+				AE5CB7B91CBCBF7400D00A79 /* CALayer+LKXibConfiguration.h */,
+				AE5CB7BA1CBCBF7400D00A79 /* CALayer+LKXibConfiguration.m */,
+			);
+			path = "Category(分类)";
+			sourceTree = "<group>";
+		};
 		AEB1EB291CB3BA0400843717 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +413,8 @@
 				AEB1EB4E1CB3BA0500843717 /* zhaoCaiTongZiTests */,
 				AEB1EB591CB3BA0500843717 /* zhaoCaiTongZiUITests */,
 				AEB1EB331CB3BA0400843717 /* Products */,
+				E1735C4884C21A9D12941731 /* Pods */,
+				F837A1170D8300FAF70BC33C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +431,9 @@
 		AEB1EB341CB3BA0400843717 /* zhaoCaiTongZi */ = {
 			isa = PBXGroup;
 			children = (
-				AEB1EB381CB3BA0500843717 /* AppDelegate.h */,
-				AEB1EB391CB3BA0500843717 /* AppDelegate.m */,
-				AEB1EB3B1CB3BA0500843717 /* ViewController.h */,
-				AEB1EB3C1CB3BA0500843717 /* ViewController.m */,
-				AEB1EB3E1CB3BA0500843717 /* Main.storyboard */,
-				AEB1EB411CB3BA0500843717 /* Assets.xcassets */,
-				AEB1EB431CB3BA0500843717 /* LaunchScreen.storyboard */,
-				AEB1EB461CB3BA0500843717 /* Info.plist */,
+				AEB1EB7D1CB3BB5100843717 /* Classes */,
+				AEB1EB8E1CB3BB5200843717 /* Main */,
+				AEB1EB941CB3BB5200843717 /* Other */,
 				AEB1EB351CB3BA0400843717 /* Supporting Files */,
 			);
 			path = zhaoCaiTongZi;
@@ -117,7 +442,9 @@
 		AEB1EB351CB3BA0400843717 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				AEB1EB361CB3BA0500843717 /* main.m */,
+				AEB1EB411CB3BA0500843717 /* Assets.xcassets */,
+				AEB1EB951CB3BB5200843717 /* Info.plist */,
+				AEB1EB431CB3BA0500843717 /* LaunchScreen.storyboard */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -140,6 +467,367 @@
 			path = zhaoCaiTongZiUITests;
 			sourceTree = "<group>";
 		};
+		AEB1EB7D1CB3BB5100843717 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AEB1EB861CB3BB5200843717 /* 精选 */,
+				AEB1EB821CB3BB5200843717 /* 投资 */,
+				AEB1EB8A1CB3BB5200843717 /* 资产 */,
+				AEB1EB7E1CB3BB5100843717 /* 我的 */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AEB1EB7E1CB3BB5100843717 /* 我的 */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A9E1CB79D1F0051B0B9 /* LoginAndRegistered(注册,登录,忘记密码) */,
+				AE5A259C1CB62BBC00C827BB /* Focus(关注我们) */,
+				AE5A25911CB5EE6000C827BB /* MyAccount(我的账户) */,
+				AEE16A851CB756590051B0B9 /* Help(帮助中心) */,
+				AE5A25A51CB635A700C827BB /* About(关于童子) */,
+				AEB1EB7F1CB3BB5100843717 /* controller */,
+				AEB1EB801CB3BB5100843717 /* model */,
+				AEB1EB811CB3BB5100843717 /* view */,
+			);
+			path = "我的";
+			sourceTree = "<group>";
+		};
+		AEB1EB7F1CB3BB5100843717 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE865D581CB49ED6008A8982 /* MyViewController.h */,
+				AE865D591CB49ED6008A8982 /* MyViewController.m */,
+				AE865D741CB4B4B9008A8982 /* MyViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEB1EB801CB3BB5100843717 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEB1EB811CB3BB5100843717 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AE865D761CB4D821008A8982 /* LKMyTableViewCell.h */,
+				AE865D771CB4D821008A8982 /* LKMyTableViewCell.m */,
+				AE865D781CB4D821008A8982 /* LKMyTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEB1EB821CB3BB5200843717 /* 投资 */ = {
+			isa = PBXGroup;
+			children = (
+				AE4C95721CBE1F5F00A578AC /* details(投资二级页面) */,
+				AEB1EB831CB3BB5200843717 /* controller */,
+				AEB1EB841CB3BB5200843717 /* model */,
+				AEB1EB851CB3BB5200843717 /* view */,
+			);
+			path = "投资";
+			sourceTree = "<group>";
+		};
+		AEB1EB831CB3BB5200843717 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE865D5E1CB49F60008A8982 /* InvestmentViewController.h */,
+				AE865D5F1CB49F60008A8982 /* InvestmentViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEB1EB841CB3BB5200843717 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEB1EB851CB3BB5200843717 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AE58DC2C1CBB9F83007DEB20 /* LKProductListTableViewCell.h */,
+				AE58DC2D1CBB9F83007DEB20 /* LKProductListTableViewCell.m */,
+				AE58DC2E1CBB9F83007DEB20 /* LKProductListTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEB1EB861CB3BB5200843717 /* 精选 */ = {
+			isa = PBXGroup;
+			children = (
+				AEB1EB871CB3BB5200843717 /* controller */,
+				AEB1EB881CB3BB5200843717 /* model */,
+				AEB1EB891CB3BB5200843717 /* view */,
+			);
+			path = "精选";
+			sourceTree = "<group>";
+		};
+		AEB1EB871CB3BB5200843717 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEB1EB9E1CB3C02F00843717 /* selectViewController.h */,
+				AEB1EB9F1CB3C02F00843717 /* selectViewController.m */,
+				AEB1EBA01CB3C02F00843717 /* selectViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEB1EB881CB3BB5200843717 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEB1EB891CB3BB5200843717 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEB1EB8A1CB3BB5200843717 /* 资产 */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A8C1CB77A030051B0B9 /* TopUp(充值) */,
+				AEE16A901CB77C760051B0B9 /* Withdrawal(提现) */,
+				AE5CB7C61CBCDD3600D00A79 /* record(交易记录,投资升级,资金退出) */,
+				AEB1EB8B1CB3BB5200843717 /* controller */,
+				AEB1EB8C1CB3BB5200843717 /* model */,
+				AEB1EB8D1CB3BB5200843717 /* view */,
+			);
+			path = "资产";
+			sourceTree = "<group>";
+		};
+		AEB1EB8B1CB3BB5200843717 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE865D5B1CB49F43008A8982 /* AssetsViewController.h */,
+				AE865D5C1CB49F43008A8982 /* AssetsViewController.m */,
+				AE5A259A1CB5F7F400C827BB /* AssetsViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEB1EB8C1CB3BB5200843717 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEB1EB8D1CB3BB5200843717 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEB1EB8E1CB3BB5200843717 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				AEB1EB8F1CB3BB5200843717 /* AppDelegate.h */,
+				AEB1EB901CB3BB5200843717 /* AppDelegate.m */,
+				AEB1EB921CB3BB5200843717 /* main.m */,
+				AE865D641CB4A114008A8982 /* LKPrefixHeader.pch */,
+				AE865D711CB4A282008A8982 /* LKConst.h */,
+				AE865D721CB4A282008A8982 /* LKConst.m */,
+				AE865D651CB4A1FA008A8982 /* Category(分类) */,
+				AEB1EB911CB3BB5200843717 /* controller */,
+				AEB1EB931CB3BB5200843717 /* view */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		AEB1EB911CB3BB5200843717 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE865D551CB49E62008A8982 /* LKTabBarController.h */,
+				AE865D561CB49E62008A8982 /* LKTabBarController.m */,
+				AE865D611CB4A094008A8982 /* LKNavigationController.h */,
+				AE865D621CB4A094008A8982 /* LKNavigationController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEB1EB931CB3BB5200843717 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEB1EB941CB3BB5200843717 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		AEE16A851CB756590051B0B9 /* Help(帮助中心) */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A861CB756590051B0B9 /* controller */,
+				AEE16A871CB756590051B0B9 /* model */,
+				AEE16A881CB756590051B0B9 /* view */,
+			);
+			path = "Help(帮助中心)";
+			sourceTree = "<group>";
+		};
+		AEE16A861CB756590051B0B9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A891CB75B280051B0B9 /* LKHelpViewController.h */,
+				AEE16A8A1CB75B280051B0B9 /* LKHelpViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEE16A871CB756590051B0B9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEE16A881CB756590051B0B9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEE16A8C1CB77A030051B0B9 /* TopUp(充值) */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A8D1CB77A030051B0B9 /* controller */,
+				AEE16A8E1CB77A030051B0B9 /* model */,
+				AEE16A8F1CB77A030051B0B9 /* view */,
+			);
+			path = "TopUp(充值)";
+			sourceTree = "<group>";
+		};
+		AEE16A8D1CB77A030051B0B9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A941CB780510051B0B9 /* LKTopUpViewController.h */,
+				AEE16A951CB780510051B0B9 /* LKTopUpViewController.m */,
+				AEE16A961CB780510051B0B9 /* LKTopUpViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEE16A8E1CB77A030051B0B9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEE16A8F1CB77A030051B0B9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEE16A901CB77C760051B0B9 /* Withdrawal(提现) */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A911CB77C760051B0B9 /* controller */,
+				AEE16A921CB77C760051B0B9 /* model */,
+				AEE16A931CB77C760051B0B9 /* view */,
+			);
+			path = "Withdrawal(提现)";
+			sourceTree = "<group>";
+		};
+		AEE16A911CB77C760051B0B9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A991CB7955B0051B0B9 /* LKWithdrawalViewController.h */,
+				AEE16A9A1CB7955B0051B0B9 /* LKWithdrawalViewController.m */,
+				AEE16A9B1CB7955B0051B0B9 /* LKWithdrawalViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEE16A921CB77C760051B0B9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEE16A931CB77C760051B0B9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AEE16A9E1CB79D1F0051B0B9 /* LoginAndRegistered(注册,登录,忘记密码) */ = {
+			isa = PBXGroup;
+			children = (
+				AEE16A9F1CB79D1F0051B0B9 /* controller */,
+				AEE16AA01CB79D1F0051B0B9 /* model */,
+				AEE16AA11CB79D1F0051B0B9 /* view */,
+			);
+			name = "LoginAndRegistered(注册,登录,忘记密码)";
+			path = "LoginAndRegistered(注册与登录)";
+			sourceTree = "<group>";
+		};
+		AEE16A9F1CB79D1F0051B0B9 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE5CB7B41CBC9CCB00D00A79 /* LKLoginViewController.h */,
+				AE5CB7B51CBC9CCB00D00A79 /* LKLoginViewController.m */,
+				AE5CB7B61CBC9CCB00D00A79 /* LKLoginViewController.xib */,
+				AE5CB7BC1CBCC8DC00D00A79 /* LKRegisteredViewController.h */,
+				AE5CB7BD1CBCC8DC00D00A79 /* LKRegisteredViewController.m */,
+				AE5CB7BE1CBCC8DC00D00A79 /* LKRegisteredViewController.xib */,
+				AE5CB7C11CBCD3AF00D00A79 /* LKForgotPasswordViewController.h */,
+				AE5CB7C21CBCD3AF00D00A79 /* LKForgotPasswordViewController.m */,
+				AE5CB7C31CBCD3AF00D00A79 /* LKForgotPasswordViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AEE16AA01CB79D1F0051B0B9 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AEE16AA11CB79D1F0051B0B9 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E1735C4884C21A9D12941731 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2F83C90203D6F3F6AC4DFD0C /* Pods.debug.xcconfig */,
+				74D0165434718BB5B124C3AE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F837A1170D8300FAF70BC33C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF66A8E1F772EAF974DE8EB4 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +835,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEB1EB5F1CB3BA0500843717 /* Build configuration list for PBXNativeTarget "zhaoCaiTongZi" */;
 			buildPhases = (
+				DE81F61D0F8AED2789939133 /* Check Pods Manifest.lock */,
 				AEB1EB2E1CB3BA0400843717 /* Sources */,
 				AEB1EB2F1CB3BA0400843717 /* Frameworks */,
 				AEB1EB301CB3BA0400843717 /* Resources */,
+				2B6F0F8383EE923213B603C2 /* Embed Pods Frameworks */,
+				BE117B5B11EF036AFB699B04 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -202,11 +893,17 @@
 		AEB1EB2A1CB3BA0400843717 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = LK;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = XZB;
 				TargetAttributes = {
 					AEB1EB311CB3BA0400843717 = {
 						CreatedOnToolsVersion = 7.2.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					AEB1EB4A1CB3BA0500843717 = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -243,9 +940,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE16A9D1CB7955B0051B0B9 /* LKWithdrawalViewController.xib in Resources */,
+				AE5CB7C51CBCD3AF00D00A79 /* LKForgotPasswordViewController.xib in Resources */,
+				AEB1EBA21CB3C02F00843717 /* selectViewController.xib in Resources */,
+				AEB1EB981CB3BB5200843717 /* Info.plist in Resources */,
+				AE4C956C1CBDE16D00A578AC /* LKChangeThePasswordViewController.xib in Resources */,
+				AEE16A981CB780510051B0B9 /* LKTopUpViewController.xib in Resources */,
+				AE865D7A1CB4D821008A8982 /* LKMyTableViewCell.xib in Resources */,
+				AE4C95711CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.xib in Resources */,
+				AE4C95971CBE466300A578AC /* LKBuyViewController.xib in Resources */,
+				AE4C957A1CBE1FD600A578AC /* LKDetailsViewController.xib in Resources */,
+				AE4C95671CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib in Resources */,
+				AE5A25AD1CB635D000C827BB /* LKAboutViewController.xib in Resources */,
+				AE58DC301CBB9F83007DEB20 /* LKProductListTableViewCell.xib in Resources */,
+				AE5A259B1CB5F7F400C827BB /* AssetsViewController.xib in Resources */,
+				AE5A25991CB5EFB000C827BB /* LKMyAccountViewController.xib in Resources */,
 				AEB1EB451CB3BA0500843717 /* LaunchScreen.storyboard in Resources */,
+				AE5A25A41CB62C9D00C827BB /* LKFocusViewController.xib in Resources */,
+				AE5CB7B81CBC9CCB00D00A79 /* LKLoginViewController.xib in Resources */,
 				AEB1EB421CB3BA0500843717 /* Assets.xcassets in Resources */,
-				AEB1EB401CB3BA0500843717 /* Main.storyboard in Resources */,
+				AE865D751CB4B4B9008A8982 /* MyViewController.xib in Resources */,
+				AE5CB7C01CBCC8DC00D00A79 /* LKRegisteredViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,14 +980,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2B6F0F8383EE923213B603C2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE117B5B11EF036AFB699B04 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE81F61D0F8AED2789939133 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEB1EB2E1CB3BA0400843717 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEB1EB3D1CB3BA0500843717 /* ViewController.m in Sources */,
-				AEB1EB3A1CB3BA0500843717 /* AppDelegate.m in Sources */,
-				AEB1EB371CB3BA0500843717 /* main.m in Sources */,
+				AE5CB7C41CBCD3AF00D00A79 /* LKForgotPasswordViewController.m in Sources */,
+				AEE16A9C1CB7955B0051B0B9 /* LKWithdrawalViewController.m in Sources */,
+				AE4C95791CBE1FD600A578AC /* LKDetailsViewController.m in Sources */,
+				AE5CB7BB1CBCBF7400D00A79 /* CALayer+LKXibConfiguration.m in Sources */,
+				AEB1EB971CB3BB5200843717 /* main.m in Sources */,
+				AE5CB7BF1CBCC8DC00D00A79 /* LKRegisteredViewController.m in Sources */,
+				AE865D731CB4A282008A8982 /* LKConst.m in Sources */,
+				AE4C95701CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m in Sources */,
+				AEB1EBA11CB3C02F00843717 /* selectViewController.m in Sources */,
+				AE4C957D1CBE377300A578AC /* LKLadderRatesViewController.m in Sources */,
+				AE865D571CB49E62008A8982 /* LKTabBarController.m in Sources */,
+				AE5A25981CB5EFB000C827BB /* LKMyAccountViewController.m in Sources */,
+				AE865D6E1CB4A1FA008A8982 /* NSDate+LKExtension.m in Sources */,
+				AE865D6F1CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.m in Sources */,
+				AE865D791CB4D821008A8982 /* LKMyTableViewCell.m in Sources */,
+				AE58DC2F1CBB9F83007DEB20 /* LKProductListTableViewCell.m in Sources */,
+				AE5A25A31CB62C9D00C827BB /* LKFocusViewController.m in Sources */,
+				AE5CB7CC1CBCDDF300D00A79 /* LKRecordViewController.m in Sources */,
+				AEB1EB961CB3BB5200843717 /* AppDelegate.m in Sources */,
+				AEE16A971CB780510051B0B9 /* LKTopUpViewController.m in Sources */,
+				AE865D601CB49F60008A8982 /* InvestmentViewController.m in Sources */,
+				AE865D6D1CB4A1FA008A8982 /* Foundation+Log.m in Sources */,
+				AE4C95961CBE466300A578AC /* LKBuyViewController.m in Sources */,
+				AE865D5A1CB49ED6008A8982 /* MyViewController.m in Sources */,
+				AE865D631CB4A094008A8982 /* LKNavigationController.m in Sources */,
+				AE4C95661CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m in Sources */,
+				AE4C956B1CBDE16D00A578AC /* LKChangeThePasswordViewController.m in Sources */,
+				AE5A25AC1CB635D000C827BB /* LKAboutViewController.m in Sources */,
+				AE865D5D1CB49F43008A8982 /* AssetsViewController.m in Sources */,
+				AEE16A8B1CB75B280051B0B9 /* LKHelpViewController.m in Sources */,
+				AE865D701CB4A1FA008A8982 /* UIView+LKExtension.m in Sources */,
+				AE5CB7B71CBC9CCB00D00A79 /* LKLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,14 +1100,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		AEB1EB3E1CB3BA0500843717 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEB1EB3F1CB3BA0500843717 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEB1EB431CB3BA0500843717 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -411,9 +1195,12 @@
 		};
 		AEB1EB601CB3BA0500843717 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F83C90203D6F3F6AC4DFD0C /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = zhaoCaiTongZi/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/zhaoCaiTongZi/Main/LKPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/zhaoCaiTongZi/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HSU.zhaoCaiTongZi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +1209,12 @@
 		};
 		AEB1EB611CB3BA0500843717 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74D0165434718BB5B124C3AE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = zhaoCaiTongZi/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/zhaoCaiTongZi/Main/LKPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/zhaoCaiTongZi/Other/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = HSU.zhaoCaiTongZi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -498,6 +1288,7 @@
 				AEB1EB611CB3BA0500843717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEB1EB621CB3BA0500843717 /* Build configuration list for PBXNativeTarget "zhaoCaiTongZiTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +1297,7 @@
 				AEB1EB641CB3BA0500843717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AEB1EB651CB3BA0500843717 /* Build configuration list for PBXNativeTarget "zhaoCaiTongZiUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +1306,7 @@
 				AEB1EB671CB3BA0500843717 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

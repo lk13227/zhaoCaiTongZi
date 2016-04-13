@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LKFocusViewController">
+            <connections>
+                <outlet property="focusTableView" destination="iEj-LA-hlb" id="EJv-Ja-HPb"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.5.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5ax-Au-Vbd">
+                    <rect key="frame" x="0.0" y="64" width="600" height="175"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="175" id="I5s-W4-KY6"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iEj-LA-hlb">
+                    <rect key="frame" x="0.0" y="239" width="600" height="361"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wSx-HX-lDU"/>
+                        <outlet property="delegate" destination="-1" id="38w-Px-cw1"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="iEj-LA-hlb" secondAttribute="bottom" id="CaQ-aG-wFW"/>
+                <constraint firstAttribute="trailing" secondItem="iEj-LA-hlb" secondAttribute="trailing" id="JEq-nV-K2p"/>
+                <constraint firstItem="iEj-LA-hlb" firstAttribute="top" secondItem="5ax-Au-Vbd" secondAttribute="bottom" id="MOt-3o-6c8"/>
+                <constraint firstItem="5ax-Au-Vbd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="NIb-XP-PV4"/>
+                <constraint firstItem="5ax-Au-Vbd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="ZoP-9Q-jTM"/>
+                <constraint firstItem="iEj-LA-hlb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="c0I-1v-H7Y"/>
+                <constraint firstAttribute="trailing" secondItem="5ax-Au-Vbd" secondAttribute="trailing" id="zY1-W9-V9L"/>
+            </constraints>
+            <point key="canvasLocation" x="295" y="338"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="2.5.jpg" width="32" height="32"/>
+    </resources>
+</document>
