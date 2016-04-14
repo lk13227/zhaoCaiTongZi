@@ -18,6 +18,8 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"关于童子";
+    //设置背景颜色
+    self.view.backgroundColor = LKGlobalBg;
 }
 
 

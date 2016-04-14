@@ -28,6 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置背景颜色
+    self.view.backgroundColor = LKGlobalBg;
+    
     self.titleArray = @[@"微信公众号",@"官方微博",@"官方qq群",@"客服邮箱"];
     self.otherTitleArray = @[@"Dragonupziben",@"招财童子",@"232363487",@"lmzb@dragonup.net"];
     self.iconImageArray = @[@"weixin",@"weibo",@"qq",@"youxiang"];

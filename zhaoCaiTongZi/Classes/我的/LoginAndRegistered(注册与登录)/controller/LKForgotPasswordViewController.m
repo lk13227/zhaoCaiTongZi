@@ -30,6 +30,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    //设置背景颜色
+    self.view.backgroundColor = LKGlobalBg;
 }
 
 
@@ -77,4 +80,10 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 @end

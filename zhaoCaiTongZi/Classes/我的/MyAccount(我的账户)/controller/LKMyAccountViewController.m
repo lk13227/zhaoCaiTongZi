@@ -27,6 +27,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置背景颜色
+    self.view.backgroundColor = LKGlobalBg;
     self.navigationController.title = @"我的账户";
     
     self.titleArray = @[@[@"用户名",@"用户信息"],@[@"登录密码"],@[@"真实姓名",@"身份证号",@"身份认证"],@[@"绑定手机"]];

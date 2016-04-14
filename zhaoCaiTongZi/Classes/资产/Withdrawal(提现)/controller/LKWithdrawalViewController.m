@@ -34,6 +34,8 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"提现";
+    //设置背景颜色
+    self.view.backgroundColor = LKGlobalBg;
     
     [self setUpUI];
 }
@@ -95,4 +97,9 @@
 
 
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 @end

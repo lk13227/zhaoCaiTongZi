@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		035EC238BE0649A74F83F269 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF66A8E1F772EAF974DE8EB4 /* libPods.a */; };
+		AE49E4691CBF63F7007D92FF /* UIApplication+Extend.m in Sources */ = {isa = PBXBuildFile; fileRef = AE49E45C1CBF63F7007D92FF /* UIApplication+Extend.m */; };
+		AE49E46A1CBF63F7007D92FF /* UIView+NFLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = AE49E45E1CBF63F7007D92FF /* UIView+NFLayout.m */; };
+		AE49E46B1CBF63F7007D92FF /* CoreNewFeatureVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AE49E4601CBF63F7007D92FF /* CoreNewFeatureVC.m */; };
+		AE49E46C1CBF63F7007D92FF /* NewFeatureModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE49E4631CBF63F7007D92FF /* NewFeatureModel.m */; };
+		AE49E46D1CBF63F7007D92FF /* NewFeatureImageV.m in Sources */ = {isa = PBXBuildFile; fileRef = AE49E4661CBF63F7007D92FF /* NewFeatureImageV.m */; };
+		AE49E46E1CBF63F7007D92FF /* NewFeatureScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = AE49E4681CBF63F7007D92FF /* NewFeatureScrollView.m */; };
 		AE4C95661CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C95641CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m */; };
 		AE4C95671CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE4C95651CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib */; };
 		AE4C956B1CBDE16D00A578AC /* LKChangeThePasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE4C95691CBDE16D00A578AC /* LKChangeThePasswordViewController.m */; };
@@ -85,6 +91,18 @@
 /* Begin PBXFileReference section */
 		2F83C90203D6F3F6AC4DFD0C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		74D0165434718BB5B124C3AE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		AE49E45B1CBF63F7007D92FF /* UIApplication+Extend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+Extend.h"; sourceTree = "<group>"; };
+		AE49E45C1CBF63F7007D92FF /* UIApplication+Extend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+Extend.m"; sourceTree = "<group>"; };
+		AE49E45D1CBF63F7007D92FF /* UIView+NFLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NFLayout.h"; sourceTree = "<group>"; };
+		AE49E45E1CBF63F7007D92FF /* UIView+NFLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NFLayout.m"; sourceTree = "<group>"; };
+		AE49E45F1CBF63F7007D92FF /* CoreNewFeatureVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreNewFeatureVC.h; sourceTree = "<group>"; };
+		AE49E4601CBF63F7007D92FF /* CoreNewFeatureVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreNewFeatureVC.m; sourceTree = "<group>"; };
+		AE49E4621CBF63F7007D92FF /* NewFeatureModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureModel.h; sourceTree = "<group>"; };
+		AE49E4631CBF63F7007D92FF /* NewFeatureModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureModel.m; sourceTree = "<group>"; };
+		AE49E4651CBF63F7007D92FF /* NewFeatureImageV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureImageV.h; sourceTree = "<group>"; };
+		AE49E4661CBF63F7007D92FF /* NewFeatureImageV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureImageV.m; sourceTree = "<group>"; };
+		AE49E4671CBF63F7007D92FF /* NewFeatureScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureScrollView.h; sourceTree = "<group>"; };
+		AE49E4681CBF63F7007D92FF /* NewFeatureScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureScrollView.m; sourceTree = "<group>"; };
 		AE4C95631CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKModifyTheCellPhoneNumberViewController.h; sourceTree = "<group>"; };
 		AE4C95641CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKModifyTheCellPhoneNumberViewController.m; sourceTree = "<group>"; };
 		AE4C95651CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKModifyTheCellPhoneNumberViewController.xib; sourceTree = "<group>"; };
@@ -205,6 +223,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE49E4581CBF63F7007D92FF /* CoreNewFeatureVC */ = {
+			isa = PBXGroup;
+			children = (
+				AE49E4591CBF63F7007D92FF /* Category */,
+				AE49E45F1CBF63F7007D92FF /* CoreNewFeatureVC.h */,
+				AE49E4601CBF63F7007D92FF /* CoreNewFeatureVC.m */,
+				AE49E4611CBF63F7007D92FF /* Model */,
+				AE49E4641CBF63F7007D92FF /* View */,
+			);
+			path = CoreNewFeatureVC;
+			sourceTree = "<group>";
+		};
+		AE49E4591CBF63F7007D92FF /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AE49E45A1CBF63F7007D92FF /* UIApplication */,
+				AE49E45D1CBF63F7007D92FF /* UIView+NFLayout.h */,
+				AE49E45E1CBF63F7007D92FF /* UIView+NFLayout.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		AE49E45A1CBF63F7007D92FF /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				AE49E45B1CBF63F7007D92FF /* UIApplication+Extend.h */,
+				AE49E45C1CBF63F7007D92FF /* UIApplication+Extend.m */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		AE49E4611CBF63F7007D92FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE49E4621CBF63F7007D92FF /* NewFeatureModel.h */,
+				AE49E4631CBF63F7007D92FF /* NewFeatureModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE49E4641CBF63F7007D92FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE49E4651CBF63F7007D92FF /* NewFeatureImageV.h */,
+				AE49E4661CBF63F7007D92FF /* NewFeatureImageV.m */,
+				AE49E4671CBF63F7007D92FF /* NewFeatureScrollView.h */,
+				AE49E4681CBF63F7007D92FF /* NewFeatureScrollView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		AE4C95721CBE1F5F00A578AC /* details(投资二级页面) */ = {
 			isa = PBXGroup;
 			children = (
@@ -665,6 +734,7 @@
 		AEB1EB941CB3BB5200843717 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				AE49E4581CBF63F7007D92FF /* CoreNewFeatureVC */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -1036,15 +1106,18 @@
 				AE5CB7C41CBCD3AF00D00A79 /* LKForgotPasswordViewController.m in Sources */,
 				AEE16A9C1CB7955B0051B0B9 /* LKWithdrawalViewController.m in Sources */,
 				AE4C95791CBE1FD600A578AC /* LKDetailsViewController.m in Sources */,
+				AE49E46C1CBF63F7007D92FF /* NewFeatureModel.m in Sources */,
 				AE5CB7BB1CBCBF7400D00A79 /* CALayer+LKXibConfiguration.m in Sources */,
 				AEB1EB971CB3BB5200843717 /* main.m in Sources */,
 				AE5CB7BF1CBCC8DC00D00A79 /* LKRegisteredViewController.m in Sources */,
+				AE49E46D1CBF63F7007D92FF /* NewFeatureImageV.m in Sources */,
 				AE865D731CB4A282008A8982 /* LKConst.m in Sources */,
 				AE4C95701CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m in Sources */,
 				AEB1EBA11CB3C02F00843717 /* selectViewController.m in Sources */,
 				AE4C957D1CBE377300A578AC /* LKLadderRatesViewController.m in Sources */,
 				AE865D571CB49E62008A8982 /* LKTabBarController.m in Sources */,
 				AE5A25981CB5EFB000C827BB /* LKMyAccountViewController.m in Sources */,
+				AE49E46B1CBF63F7007D92FF /* CoreNewFeatureVC.m in Sources */,
 				AE865D6E1CB4A1FA008A8982 /* NSDate+LKExtension.m in Sources */,
 				AE865D6F1CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.m in Sources */,
 				AE865D791CB4D821008A8982 /* LKMyTableViewCell.m in Sources */,
@@ -1054,8 +1127,10 @@
 				AEB1EB961CB3BB5200843717 /* AppDelegate.m in Sources */,
 				AEE16A971CB780510051B0B9 /* LKTopUpViewController.m in Sources */,
 				AE865D601CB49F60008A8982 /* InvestmentViewController.m in Sources */,
+				AE49E4691CBF63F7007D92FF /* UIApplication+Extend.m in Sources */,
 				AE865D6D1CB4A1FA008A8982 /* Foundation+Log.m in Sources */,
 				AE4C95961CBE466300A578AC /* LKBuyViewController.m in Sources */,
+				AE49E46E1CBF63F7007D92FF /* NewFeatureScrollView.m in Sources */,
 				AE865D5A1CB49ED6008A8982 /* MyViewController.m in Sources */,
 				AE865D631CB4A094008A8982 /* LKNavigationController.m in Sources */,
 				AE4C95661CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m in Sources */,
@@ -1064,6 +1139,7 @@
 				AE865D5D1CB49F43008A8982 /* AssetsViewController.m in Sources */,
 				AEE16A8B1CB75B280051B0B9 /* LKHelpViewController.m in Sources */,
 				AE865D701CB4A1FA008A8982 /* UIView+LKExtension.m in Sources */,
+				AE49E46A1CBF63F7007D92FF /* UIView+NFLayout.m in Sources */,
 				AE5CB7B71CBC9CCB00D00A79 /* LKLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

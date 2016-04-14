@@ -28,12 +28,12 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入一万以上的金额" textAlignment="right" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="ZFE-sc-MVx" userLabel="充值textfield">
-                            <rect key="frame" x="140" y="9" width="440" height="30"/>
+                            <rect key="frame" x="120" y="9" width="470" height="30"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="30" id="gRI-56-DSM"/>
                             </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by6-rJ-bBA" userLabel="第二行背景">
                             <rect key="frame" x="0.0" y="47" width="600" height="1"/>
@@ -45,8 +45,8 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstItem="ZFE-sc-MVx" firstAttribute="leading" secondItem="FhB-Rz-mrq" secondAttribute="trailing" constant="30" id="67m-l8-MNg"/>
-                        <constraint firstAttribute="trailing" secondItem="ZFE-sc-MVx" secondAttribute="trailing" constant="20" id="Deo-b0-Nnl"/>
+                        <constraint firstItem="ZFE-sc-MVx" firstAttribute="leading" secondItem="FhB-Rz-mrq" secondAttribute="trailing" constant="10" id="67m-l8-MNg"/>
+                        <constraint firstAttribute="trailing" secondItem="ZFE-sc-MVx" secondAttribute="trailing" constant="10" id="Deo-b0-Nnl"/>
                         <constraint firstItem="FhB-Rz-mrq" firstAttribute="centerY" secondItem="wrJ-YR-NxZ" secondAttribute="centerY" id="H2V-Sr-DPI"/>
                         <constraint firstItem="by6-rJ-bBA" firstAttribute="leading" secondItem="wrJ-YR-NxZ" secondAttribute="leading" id="LSz-OK-ofu"/>
                         <constraint firstAttribute="trailing" secondItem="by6-rJ-bBA" secondAttribute="trailing" id="TLv-qY-al3"/>

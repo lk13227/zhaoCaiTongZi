@@ -38,6 +38,8 @@
     
     self.back = YES;
     self.backArray = @[@"中国银行",@"中国建设银行",@"中国工商银行",@"中国农业银行",@"招商银行",@"交通银行",@"中国农业银行",@"邮政储蓄银行",@"北京银行"];
+    //设置背景颜色
+    self.view.backgroundColor = LKGlobalBg;
 }
 
 
@@ -97,4 +99,9 @@
 - (IBAction)submitClick:(UIButton *)sender {
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 @end

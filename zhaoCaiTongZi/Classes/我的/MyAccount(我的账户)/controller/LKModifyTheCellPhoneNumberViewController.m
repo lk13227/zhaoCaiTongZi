@@ -33,6 +33,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //设置背景颜色
+    self.view.backgroundColor = LKGlobalBg;
 }
 
 
@@ -73,4 +75,9 @@
 - (IBAction)submitClick:(UIButton *)sender {
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    [self.view endEditing:YES];
+}
 @end
