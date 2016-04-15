@@ -294,8 +294,8 @@
                         <constraint firstItem="Pr3-Ot-Vsa" firstAttribute="top" secondItem="RjD-Mt-wXP" secondAttribute="bottom" id="H9j-0u-a89"/>
                         <constraint firstItem="Pr3-Ot-Vsa" firstAttribute="top" secondItem="RjD-Mt-wXP" secondAttribute="bottom" constant="5" id="Hra-BR-9hz"/>
                         <constraint firstAttribute="bottom" secondItem="qpn-sh-748" secondAttribute="bottom" id="IeY-eO-vBe"/>
-                        <constraint firstAttribute="trailing" secondItem="RjD-Mt-wXP" secondAttribute="trailing" constant="80" id="J4c-yh-oKA"/>
-                        <constraint firstItem="RjD-Mt-wXP" firstAttribute="leading" secondItem="8YB-5N-ntI" secondAttribute="leading" constant="80" id="Jjc-pg-FtD"/>
+                        <constraint firstAttribute="trailing" secondItem="RjD-Mt-wXP" secondAttribute="trailing" constant="75" id="J4c-yh-oKA"/>
+                        <constraint firstItem="RjD-Mt-wXP" firstAttribute="leading" secondItem="8YB-5N-ntI" secondAttribute="leading" constant="75" id="Jjc-pg-FtD"/>
                         <constraint firstAttribute="trailing" secondItem="A3z-cg-FYv" secondAttribute="trailing" constant="21" id="KMp-72-G6A"/>
                         <constraint firstAttribute="trailing" secondItem="Pr3-Ot-Vsa" secondAttribute="trailing" constant="20" id="PX1-HO-82w"/>
                         <constraint firstAttribute="trailing" secondItem="qpn-sh-748" secondAttribute="trailing" id="QM1-AK-w5u"/>
@@ -461,7 +461,7 @@
                     <include reference="keu-em-Ex2"/>
                 </mask>
             </variation>
-            <point key="canvasLocation" x="479" y="337"/>
+            <point key="canvasLocation" x="370" y="289"/>
         </view>
     </objects>
     <resources>

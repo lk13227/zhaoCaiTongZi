@@ -10,4 +10,6 @@
 
 @interface LKBuyViewController : UIViewController
 
+//@property(nonatomic, strong)NSMutableArray *productList;//商品列表
+
 @end

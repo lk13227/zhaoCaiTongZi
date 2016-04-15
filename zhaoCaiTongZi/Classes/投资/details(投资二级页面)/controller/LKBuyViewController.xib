@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LKBuyViewController">
             <connections>
+                <outlet property="earningsLabel" destination="mKG-HN-NWt" id="y3h-bX-3Kv"/>
+                <outlet property="topUpTextField" destination="ZFE-sc-MVx" id="5qa-KW-0Xw"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -114,6 +116,9 @@
                             <integer key="value" value="20"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="buyClick:" destination="-1" eventType="touchUpInside" id="GY4-4n-nwB"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

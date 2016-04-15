@@ -19,7 +19,7 @@
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];
-
+    
     //set NavigationBar 背景颜色&title 颜色
 //    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
 //    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],UITextAttributeTextColor,nil]];
