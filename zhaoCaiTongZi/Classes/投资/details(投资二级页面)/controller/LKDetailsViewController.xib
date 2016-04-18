@@ -43,13 +43,26 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总共8人购买" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXv-94-EUh">
+                            <rect key="frame" x="20" y="79" width="173" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="QuC-jG-jni"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="fXv-94-EUh" firstAttribute="leading" secondItem="IB4-jG-Igr" secondAttribute="leading" id="Cx6-mW-VpA"/>
                         <constraint firstItem="IB4-jG-Igr" firstAttribute="centerY" secondItem="YvZ-HO-odQ" secondAttribute="centerY" id="E0S-9C-6WL"/>
                         <constraint firstItem="f2T-LK-dcK" firstAttribute="leading" secondItem="IB4-jG-Igr" secondAttribute="trailing" constant="5" id="EJV-YK-rjD"/>
                         <constraint firstItem="f2T-LK-dcK" firstAttribute="centerY" secondItem="IB4-jG-Igr" secondAttribute="centerY" constant="-10" id="JvQ-8p-i7G"/>
+                        <constraint firstAttribute="bottom" secondItem="fXv-94-EUh" secondAttribute="bottom" constant="3" id="Ot4-bm-TlD"/>
+                        <constraint firstItem="fXv-94-EUh" firstAttribute="trailing" secondItem="qmJ-Th-qtP" secondAttribute="trailing" id="SsT-nF-DOd"/>
                         <constraint firstItem="qmJ-Th-qtP" firstAttribute="leading" secondItem="IB4-jG-Igr" secondAttribute="trailing" constant="5" id="frh-9B-jtO"/>
+                        <constraint firstItem="fXv-94-EUh" firstAttribute="leading" secondItem="YvZ-HO-odQ" secondAttribute="leading" constant="20" id="kf1-Iz-VBw"/>
                         <constraint firstItem="qmJ-Th-qtP" firstAttribute="top" secondItem="f2T-LK-dcK" secondAttribute="bottom" constant="5" id="pvC-ga-oMR"/>
                         <constraint firstItem="IB4-jG-Igr" firstAttribute="leading" secondItem="YvZ-HO-odQ" secondAttribute="leading" constant="20" id="qtr-1T-vWH"/>
                         <constraint firstAttribute="height" constant="100" id="zee-Gl-Dxs"/>
@@ -168,15 +181,33 @@
                                 <constraint firstAttribute="width" constant="16" id="xAv-jh-HiS"/>
                             </constraints>
                         </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDa-WA-1Cd" userLabel="利率按钮">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                            <connections>
+                                <action selector="ladderRatesClick" destination="-1" eventType="touchUpInside" id="IWq-TW-uKJ"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="Hjd-e6-CHg" firstAttribute="centerY" secondItem="q9O-bk-X7b" secondAttribute="centerY" id="6Ve-1O-Z1q"/>
+                        <constraint firstAttribute="trailing" secondItem="zDa-WA-1Cd" secondAttribute="trailing" id="8yP-e9-A1Y"/>
                         <constraint firstAttribute="trailing" secondItem="Hjd-e6-CHg" secondAttribute="trailing" constant="25" id="ABD-IP-EbU"/>
+                        <constraint firstItem="zDa-WA-1Cd" firstAttribute="leading" secondItem="93J-QN-b9w" secondAttribute="trailing" id="AmW-al-Eyc"/>
                         <constraint firstItem="93J-QN-b9w" firstAttribute="centerY" secondItem="q9O-bk-X7b" secondAttribute="centerY" id="NSw-0X-RSv"/>
+                        <constraint firstItem="zDa-WA-1Cd" firstAttribute="leading" secondItem="q9O-bk-X7b" secondAttribute="leading" id="UF8-ml-9RZ"/>
+                        <constraint firstItem="Hjd-e6-CHg" firstAttribute="leading" secondItem="zDa-WA-1Cd" secondAttribute="trailing" id="V0m-UH-mEh"/>
+                        <constraint firstAttribute="bottom" secondItem="zDa-WA-1Cd" secondAttribute="bottom" id="ZSE-JB-saH"/>
                         <constraint firstItem="93J-QN-b9w" firstAttribute="leading" secondItem="q9O-bk-X7b" secondAttribute="leading" constant="25" id="cnC-5L-U2W"/>
+                        <constraint firstItem="zDa-WA-1Cd" firstAttribute="top" secondItem="q9O-bk-X7b" secondAttribute="top" id="oQa-ad-9ux"/>
                         <constraint firstAttribute="height" constant="44" id="vPv-F3-Csw"/>
                     </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="AmW-al-Eyc"/>
+                            <exclude reference="V0m-UH-mEh"/>
+                        </mask>
+                    </variation>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Asu-v6-bW4">
                     <rect key="frame" x="0.0" y="428" width="600" height="44"/>

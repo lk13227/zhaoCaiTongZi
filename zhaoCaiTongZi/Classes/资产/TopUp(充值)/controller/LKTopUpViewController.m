@@ -15,7 +15,7 @@
 /** 定时器 */
 @property (nonatomic,strong) NSTimer *timer;
 /** 验证码秒数 */
-@property (nonatomic,assign) NSInteger *index;
+@property (nonatomic,assign) NSInteger index;
 /** 温馨提示 */
 @property (strong, nonatomic) UILabel *promptLabel;
 

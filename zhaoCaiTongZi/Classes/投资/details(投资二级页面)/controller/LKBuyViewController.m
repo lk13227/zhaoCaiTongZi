@@ -11,7 +11,6 @@
 #import <AlipaySDK/AlipaySDK.h>//支付宝
 #import "Order.h"
 #import "DataSigner.h"
-#import "Product.h"
 
 @interface LKBuyViewController ()
 
@@ -30,7 +29,8 @@
     //设置背景颜色
     self.view.backgroundColor = LKGlobalBg;
     
-    //[self generateData];//支付宝数据
+    //注册通知 来计算收益
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textFieldChanged) name:UITextFieldTextDidChangeNotification object:self.topUpTextField];
 }
 
 
@@ -74,7 +74,6 @@
                                               cancelButtonTitle:@"确定"
                                               otherButtonTitles:nil];
         [alert show];
-        //[tableView deselectRowAtIndexPath:indexPath animated:YES];
         return;
     }
     //把商品转换成订单信息
@@ -88,7 +87,8 @@
     order.tradeNO = [self generateTradeNO]; //订单ID必须在系统中是唯一的
     order.productName = @"珑门资本管理"; //商品标题
     order.productDescription = @"珑门"; //商品描述
-    order.amount = self.topUpTextField.text; //商品价格
+    //order.amount = self.topUpTextField.text; //商品价格
+    order.amount = [NSString stringWithFormat:@"%@0000",self.topUpTextField.text]; //商品价格
     order.notifyURL =  @"www.dragonup.net/index.php/Api/Pay/resuccess"; //回调URL
     
     order.service = @"mobile.securitypay.pay";
@@ -104,7 +104,7 @@
     
     //将订单信息拼接成字符串
     NSString *orderSpec = [order description];
-    NSLog(@"orderSpec = %@",orderSpec);
+    //LKLog(@"orderSpec = %@",orderSpec);
     //请求参数252765927
     /*
      partner=""&seller_id=""&out_trade_no="93I93TSJVM9Q32E"&subject="3"&body="我是测试数据"&total_fee="1.01"&notify_url="http://www.xxx.com"&service="mobile.securitypay.pay"&payment_type="1"&_input_charset="utf-8"&it_b_pay="30m"&show_url="m.alipay.com"
@@ -161,47 +161,30 @@
 }
 
 
-
-//#pragma mark -
-//#pragma mark   ==============产生订单信息==============
-//
-//- (void)generateData{
-//    NSArray *subjects = @[@"1",
-//                          @"2",@"3",@"4",
-//                          @"5",@"6",@"7",
-//                          @"8",@"9",@"10"];
-//    NSArray *body = @[@"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据",
-//                      @"我是测试数据"];
-//    
-//    if (nil == self.productList) {
-//        self.productList = [[NSMutableArray alloc] init];
-//    }
-//    else {
-//        [self.productList removeAllObjects];
-//    }
-//    
-//    for (int i = 0; i < [subjects count]; ++i) {
-//        Product *product = [[Product alloc] init];
-//        product.subject = [subjects objectAtIndex:i];
-//        product.body = [body objectAtIndex:i];
-//        
-//        product.price = 0.01f+pow(10,i-2);
-//        [self.productList addObject:product];
-//    }
-//}
-
+#pragma mark -
+#pragma mark   ==============textfield代理==============
+- (void)textFieldChanged
+{//计算收益
+    float earnings = [NSString stringWithFormat:@"%@0000",self.topUpTextField.text].integerValue;
+    earnings = earnings * 0.11;
+    if (earnings >= 236223200.00) {
+        self.earningsLabel.text = [NSString stringWithFormat:@"超出可投资金额"];
+    } else {
+        self.earningsLabel.text = [NSString stringWithFormat:@"%.2f",earnings];
+    }
+}
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     [self.view endEditing:YES];
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,nil]];
+    
+    [super viewWillAppear:animated];
 }
 
 @end

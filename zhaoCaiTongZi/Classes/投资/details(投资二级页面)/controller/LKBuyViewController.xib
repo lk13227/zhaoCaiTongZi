@@ -20,7 +20,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wrJ-YR-NxZ" userLabel="第一行背景">
                     <rect key="frame" x="0.0" y="80" width="600" height="48"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="买入金额:(元)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhB-Rz-mrq">
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="买入金额:(万)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FhB-Rz-mrq">
                             <rect key="frame" x="10" y="13" width="100" height="21"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="100" id="gLA-2R-PUe"/>
@@ -35,7 +35,7 @@
                                 <constraint firstAttribute="height" constant="30" id="gRI-56-DSM"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
-                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="by6-rJ-bBA" userLabel="第二行背景">
                             <rect key="frame" x="0.0" y="47" width="600" height="1"/>
@@ -78,9 +78,8 @@
                             </constraints>
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKG-HN-NWt">
-                            <rect key="frame" x="510" y="13" width="70" height="21"/>
+                            <rect key="frame" x="120" y="13" width="460" height="21"/>
                             <constraints>
-                                <constraint firstAttribute="width" constant="70" id="V1q-gb-0so"/>
                                 <constraint firstAttribute="height" constant="21" id="X3L-YB-mDp"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -90,6 +89,7 @@
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
+                        <constraint firstItem="mKG-HN-NWt" firstAttribute="leading" secondItem="5pP-0H-uHb" secondAttribute="trailing" constant="10" id="Lsp-2d-TbK"/>
                         <constraint firstAttribute="height" constant="48" id="X1c-rw-tOx"/>
                         <constraint firstItem="5pP-0H-uHb" firstAttribute="leading" secondItem="emm-DD-tOj" secondAttribute="leading" constant="10" id="XH0-tj-vBX"/>
                         <constraint firstAttribute="trailing" secondItem="mKG-HN-NWt" secondAttribute="trailing" constant="20" id="ZSM-uY-Yu8"/>
@@ -133,6 +133,7 @@
                 <constraint firstItem="wrJ-YR-NxZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="80" id="TfR-nr-rmS"/>
                 <constraint firstItem="emm-DD-tOj" firstAttribute="top" secondItem="wrJ-YR-NxZ" secondAttribute="bottom" id="drf-GE-Ivj"/>
             </constraints>
+            <point key="canvasLocation" x="318" y="219"/>
         </view>
     </objects>
 </document>

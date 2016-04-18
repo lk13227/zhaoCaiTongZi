@@ -8,6 +8,9 @@
 
 #import "LKRegisteredViewController.h"
 
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+
 @interface LKRegisteredViewController ()
 
 /** 手机号输入框 */
@@ -24,7 +27,7 @@
 /** 定时器 */
 @property (nonatomic,strong) NSTimer *timer;
 /** 验证码秒数 */
-@property (nonatomic,assign) NSInteger *index;
+@property (nonatomic,assign) NSInteger index;
 
 @end
 
@@ -42,9 +45,40 @@
  *  验证码事件
  */
 - (IBAction)verificationClick:(UIButton *)sender {
+    
+    //验证码网络请求
+    [self verificationNetWork];
+    
     self.index = 60;
     [self addTimer];
 }
+
+//验证码网络请求
+- (void)verificationNetWork
+{
+//    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"mobileNumber"] = self.phoneTextField.text;
+    params[@"version"] = @"1.0";
+    params[@"appName"] = @"financing";
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] GET:@"http://192.168.1.128:8080/sxwebportal/smsmt.do" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [SVProgressHUD showErrorWithStatus:@"请求验证码失败"];
+    }];
+}
+
 //添加定时器
 -(void)addTimer
 {

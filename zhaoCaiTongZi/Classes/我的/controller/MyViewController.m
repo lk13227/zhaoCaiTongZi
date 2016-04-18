@@ -67,6 +67,9 @@
         LKFocusViewController *focusVC = [[LKFocusViewController alloc] init];
         [self.navigationController pushViewController:focusVC animated:YES];
     }
+    
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

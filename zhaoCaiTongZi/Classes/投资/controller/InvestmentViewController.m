@@ -16,7 +16,7 @@
 
 #define CellID @"productList"
 
-@interface InvestmentViewController ()<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface InvestmentViewController ()<UIScrollViewDelegate,UITableViewDataSource,UITableViewDelegate,SDCycleScrollViewDelegate>
 
 /** 分段控制器上的滚动视图 */
 @property (nonatomic, strong) UIScrollView *scrollView;
@@ -83,6 +83,7 @@
     //上面的轮播图
     NSArray *adImageArr = @[@"理财宝.png",@"年年盈.png",@"六六顺.png",@"bn.png"];
     SDCycleScrollView *cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 64, LKScreenW, 120) imageNamesGroup:adImageArr];
+    cycleScrollView.delegate = self;
     self.automaticallyAdjustsScrollViewInsets = NO;//关闭自动调整scrollerView
     [self.view addSubview:cycleScrollView];
     
@@ -145,6 +146,13 @@
     NSInteger page = scrollView.contentOffset.x / pageWidth;
     
     [self.segmentedControl setSelectedSegmentIndex:page animated:YES];
+}
+
+#pragma mark -
+#pragma mark   ==============轮播图点击事件==============
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+{
+    LKLog(@"点击%d",index);
 }
 
 #pragma mark - UITableView相关
@@ -218,6 +226,18 @@
     LKDetailsViewController *detailsVC = [[LKDetailsViewController alloc] init];
     detailsVC.navigationItem.title = @"详情";
     [self.navigationController pushViewController:detailsVC animated:YES];
+    
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,nil]];
+    
+    [super viewWillAppear:animated];
 }
 
 @end

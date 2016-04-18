@@ -81,6 +81,13 @@
 		AE865D751CB4B4B9008A8982 /* MyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE865D741CB4B4B9008A8982 /* MyViewController.xib */; };
 		AE865D791CB4D821008A8982 /* LKMyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D771CB4D821008A8982 /* LKMyTableViewCell.m */; };
 		AE865D7A1CB4D821008A8982 /* LKMyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE865D781CB4D821008A8982 /* LKMyTableViewCell.xib */; };
+		AE8CAD261CC4A69500386DD3 /* LKLadderRatesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE8CAD251CC4A69500386DD3 /* LKLadderRatesViewController.xib */; };
+		AE8CAD331CC4B78000386DD3 /* progress.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CAD281CC4B78000386DD3 /* progress.m */; };
+		AE8CAD341CC4B78000386DD3 /* progress1.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CAD2A1CC4B78000386DD3 /* progress1.m */; };
+		AE8CAD351CC4B78000386DD3 /* progress2.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CAD2C1CC4B78000386DD3 /* progress2.m */; };
+		AE8CAD361CC4B78000386DD3 /* progress3.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CAD2E1CC4B78000386DD3 /* progress3.m */; };
+		AE8CAD371CC4B78000386DD3 /* progress4.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CAD301CC4B78000386DD3 /* progress4.m */; };
+		AE8CAD381CC4B78000386DD3 /* progress5.m in Sources */ = {isa = PBXBuildFile; fileRef = AE8CAD321CC4B78000386DD3 /* progress5.m */; };
 		AEB1EB421CB3BA0500843717 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEB1EB411CB3BA0500843717 /* Assets.xcassets */; };
 		AEB1EB451CB3BA0500843717 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB1EB431CB3BA0500843717 /* LaunchScreen.storyboard */; };
 		AEB1EB501CB3BA0500843717 /* zhaoCaiTongZiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AEB1EB4F1CB3BA0500843717 /* zhaoCaiTongZiTests.m */; };
@@ -309,6 +316,19 @@
 		AE865D761CB4D821008A8982 /* LKMyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKMyTableViewCell.h; sourceTree = "<group>"; };
 		AE865D771CB4D821008A8982 /* LKMyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKMyTableViewCell.m; sourceTree = "<group>"; };
 		AE865D781CB4D821008A8982 /* LKMyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKMyTableViewCell.xib; sourceTree = "<group>"; };
+		AE8CAD251CC4A69500386DD3 /* LKLadderRatesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKLadderRatesViewController.xib; sourceTree = "<group>"; };
+		AE8CAD271CC4B78000386DD3 /* progress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progress.h; sourceTree = "<group>"; };
+		AE8CAD281CC4B78000386DD3 /* progress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progress.m; sourceTree = "<group>"; };
+		AE8CAD291CC4B78000386DD3 /* progress1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progress1.h; sourceTree = "<group>"; };
+		AE8CAD2A1CC4B78000386DD3 /* progress1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progress1.m; sourceTree = "<group>"; };
+		AE8CAD2B1CC4B78000386DD3 /* progress2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progress2.h; sourceTree = "<group>"; };
+		AE8CAD2C1CC4B78000386DD3 /* progress2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progress2.m; sourceTree = "<group>"; };
+		AE8CAD2D1CC4B78000386DD3 /* progress3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progress3.h; sourceTree = "<group>"; };
+		AE8CAD2E1CC4B78000386DD3 /* progress3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progress3.m; sourceTree = "<group>"; };
+		AE8CAD2F1CC4B78000386DD3 /* progress4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progress4.h; sourceTree = "<group>"; };
+		AE8CAD301CC4B78000386DD3 /* progress4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progress4.m; sourceTree = "<group>"; };
+		AE8CAD311CC4B78000386DD3 /* progress5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = progress5.h; sourceTree = "<group>"; };
+		AE8CAD321CC4B78000386DD3 /* progress5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = progress5.m; sourceTree = "<group>"; };
 		AEB1EB321CB3BA0400843717 /* zhaoCaiTongZi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zhaoCaiTongZi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB1EB411CB3BA0500843717 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEB1EB441CB3BA0500843717 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -445,6 +465,7 @@
 				AE4C95781CBE1FD600A578AC /* LKDetailsViewController.xib */,
 				AE4C957B1CBE377300A578AC /* LKLadderRatesViewController.h */,
 				AE4C957C1CBE377300A578AC /* LKLadderRatesViewController.m */,
+				AE8CAD251CC4A69500386DD3 /* LKLadderRatesViewController.xib */,
 				AE4C95931CBE466300A578AC /* LKBuyViewController.h */,
 				AE4C95941CBE466300A578AC /* LKBuyViewController.m */,
 				AE4C95951CBE466300A578AC /* LKBuyViewController.xib */,
@@ -462,6 +483,18 @@
 		AE4C95751CBE1F5F00A578AC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				AE8CAD271CC4B78000386DD3 /* progress.h */,
+				AE8CAD281CC4B78000386DD3 /* progress.m */,
+				AE8CAD291CC4B78000386DD3 /* progress1.h */,
+				AE8CAD2A1CC4B78000386DD3 /* progress1.m */,
+				AE8CAD2B1CC4B78000386DD3 /* progress2.h */,
+				AE8CAD2C1CC4B78000386DD3 /* progress2.m */,
+				AE8CAD2D1CC4B78000386DD3 /* progress3.h */,
+				AE8CAD2E1CC4B78000386DD3 /* progress3.m */,
+				AE8CAD2F1CC4B78000386DD3 /* progress4.h */,
+				AE8CAD301CC4B78000386DD3 /* progress4.m */,
+				AE8CAD311CC4B78000386DD3 /* progress5.h */,
+				AE8CAD321CC4B78000386DD3 /* progress5.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1312,6 +1345,7 @@
 				AE4C957A1CBE1FD600A578AC /* LKDetailsViewController.xib in Resources */,
 				AE4C95671CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.xib in Resources */,
 				AE5A25AD1CB635D000C827BB /* LKAboutViewController.xib in Resources */,
+				AE8CAD261CC4A69500386DD3 /* LKLadderRatesViewController.xib in Resources */,
 				AE6515741CC07FEE000B2E76 /* AlipaySDK.bundle in Resources */,
 				AE58DC301CBB9F83007DEB20 /* LKProductListTableViewCell.xib in Resources */,
 				AE5A259B1CB5F7F400C827BB /* AssetsViewController.xib in Resources */,
@@ -1406,15 +1440,18 @@
 				AE6515761CC07FEF000B2E76 /* APAuthV2Info.m in Sources */,
 				AE49E46D1CBF63F7007D92FF /* NewFeatureImageV.m in Sources */,
 				AE865D731CB4A282008A8982 /* LKConst.m in Sources */,
+				AE8CAD331CC4B78000386DD3 /* progress.m in Sources */,
 				AE65157E1CC07FEF000B2E76 /* NSDataEx.m in Sources */,
 				AE4C95701CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m in Sources */,
 				AEB1EBA11CB3C02F00843717 /* selectViewController.m in Sources */,
 				AE4C957D1CBE377300A578AC /* LKLadderRatesViewController.m in Sources */,
 				AE65157D1CC07FEF000B2E76 /* MD5DataSigner.m in Sources */,
 				AE865D571CB49E62008A8982 /* LKTabBarController.m in Sources */,
+				AE8CAD371CC4B78000386DD3 /* progress4.m in Sources */,
 				AE5A25981CB5EFB000C827BB /* LKMyAccountViewController.m in Sources */,
 				AE65157C1CC07FEF000B2E76 /* DataVerifier.m in Sources */,
 				AE49E46B1CBF63F7007D92FF /* CoreNewFeatureVC.m in Sources */,
+				AE8CAD341CC4B78000386DD3 /* progress1.m in Sources */,
 				AE65159A1CC08691000B2E76 /* Product.m in Sources */,
 				AE865D6E1CB4A1FA008A8982 /* NSDate+LKExtension.m in Sources */,
 				AE865D6F1CB4A1FA008A8982 /* UIBarButtonItem+LKExtension.m in Sources */,
@@ -1429,6 +1466,7 @@
 				AE65157F1CC07FEF000B2E76 /* openssl_wrapper.m in Sources */,
 				AE65157B1CC07FEF000B2E76 /* DataSigner.m in Sources */,
 				AE865D6D1CB4A1FA008A8982 /* Foundation+Log.m in Sources */,
+				AE8CAD351CC4B78000386DD3 /* progress2.m in Sources */,
 				AE4C95961CBE466300A578AC /* LKBuyViewController.m in Sources */,
 				AE49E46E1CBF63F7007D92FF /* NewFeatureScrollView.m in Sources */,
 				AE865D5A1CB49ED6008A8982 /* MyViewController.m in Sources */,
@@ -1438,8 +1476,10 @@
 				AE6515811CC07FEF000B2E76 /* RSADataVerifier.m in Sources */,
 				AE5A25AC1CB635D000C827BB /* LKAboutViewController.m in Sources */,
 				AE865D5D1CB49F43008A8982 /* AssetsViewController.m in Sources */,
+				AE8CAD381CC4B78000386DD3 /* progress5.m in Sources */,
 				AEE16A8B1CB75B280051B0B9 /* LKHelpViewController.m in Sources */,
 				AE865D701CB4A1FA008A8982 /* UIView+LKExtension.m in Sources */,
+				AE8CAD361CC4B78000386DD3 /* progress3.m in Sources */,
 				AE49E46A1CBF63F7007D92FF /* UIView+NFLayout.m in Sources */,
 				AE65157A1CC07FEF000B2E76 /* base64.m in Sources */,
 				AE5CB7B71CBC9CCB00D00A79 /* LKLoginViewController.m in Sources */,

@@ -58,6 +58,9 @@
         theIdentityAuthenticationVC.navigationItem.title = @"身份认证";
         [self.navigationController pushViewController:theIdentityAuthenticationVC animated:YES];
     }
+    
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

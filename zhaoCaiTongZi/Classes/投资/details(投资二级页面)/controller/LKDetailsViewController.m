@@ -9,6 +9,7 @@
 #import "LKDetailsViewController.h"
 
 #import "LKBuyViewController.h"
+#import "LKLadderRatesViewController.h"
 
 @interface LKDetailsViewController ()
 
@@ -18,11 +19,11 @@
 
 - (void)viewWillAppear:(BOOL)animated
 {
-    [super viewWillAppear:animated];
-    
     //set NavigationBar 背景颜色&title 颜色
-//    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
-//    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],UITextAttributeTextColor,nil]];
+    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+    
+    [super viewWillAppear:animated];
 }
 
 - (void)viewDidLoad {
@@ -32,6 +33,14 @@
     self.view.backgroundColor = LKGlobalBg;
 }
 
+/**
+ *  利率按钮
+ */
+- (IBAction)ladderRatesClick {
+    LKLadderRatesViewController *ladderRatesVC = [[LKLadderRatesViewController alloc] init];
+    ladderRatesVC.navigationItem.title = @"投资资金阶梯利率";
+    [self.navigationController pushViewController:ladderRatesVC animated:YES];
+}
 
 /**
  *  购买按钮

@@ -99,6 +99,9 @@
         recordVC.navigationItem.title = @"资金退出";
         [self.navigationController pushViewController:recordVC animated:YES];
     }
+    
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
 #pragma mark 充值提现按钮
