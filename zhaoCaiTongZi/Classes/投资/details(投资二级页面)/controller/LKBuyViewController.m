@@ -184,6 +184,8 @@
     [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,nil]];
     
+    //隐藏导航栏
+    self.navigationController.navigationBar.hidden = NO;
     [super viewWillAppear:animated];
 }
 

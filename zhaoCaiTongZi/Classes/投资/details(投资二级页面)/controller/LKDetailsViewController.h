@@ -10,4 +10,7 @@
 
 @interface LKDetailsViewController : UIViewController
 
+/** 标题 */
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+
 @end

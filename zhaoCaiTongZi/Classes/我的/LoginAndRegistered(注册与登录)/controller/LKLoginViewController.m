@@ -11,6 +11,9 @@
 #import "LKRegisteredViewController.h"
 #import "LKForgotPasswordViewController.h"
 
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+
 @interface LKLoginViewController ()
 
 /** 手机号输入框 */
@@ -50,6 +53,28 @@
  *  登录事件
  */
 - (IBAction)loginClick:(UIButton *)sender {
+    
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"mobileNumber"] = self.phoneTextField.text;
+    params[@"pssword"] = self.passwordTextField.text;
+    params[@"version"] = VERSION;
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@financinglogon.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
+        [SVProgressHUD showErrorWithStatus:@"登录失败"];
+    }];
 }
 
 /**

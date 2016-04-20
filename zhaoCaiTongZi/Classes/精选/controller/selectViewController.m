@@ -9,6 +9,8 @@
 #import "selectViewController.h"
 
 #import <Masonry.h>
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
 
 @interface selectViewController ()
 
@@ -40,7 +42,7 @@
     [self setUpView];
     
     //设置导航栏标题
-    self.navigationItem.title = @"招财童子";
+    //self.navigationItem.title = @"招财童子";
     //设置背景颜色
     self.view.backgroundColor = LKGlobalBg;
 }
@@ -63,6 +65,31 @@
     [self.snapLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.center.equalTo(self.snapBtn);
         make.size.mas_equalTo(CGSizeMake(50, 50));
+    }];
+}
+
+- (void)setUpData
+{
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"pager"] = @"";
+    params[@"home"] = @"";
+    params[@"version"] = VERSION;
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@financinghome.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
+        [SVProgressHUD showErrorWithStatus:@"请求失败"];
     }];
 }
 

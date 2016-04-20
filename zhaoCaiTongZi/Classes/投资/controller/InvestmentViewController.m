@@ -10,6 +10,8 @@
 
 #import <SDCycleScrollView.h>
 #import <HMSegmentedControl.h>
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
 
 #import "LKProductListTableViewCell.h"
 #import "LKDetailsViewController.h"
@@ -57,7 +59,7 @@
     self.financialCycleArray = @[@"3个月",@"6个月",@"12个月"];
     //基金
     self.fundTitleArray = @[@"理财宝"];
-    self.fundSubtitleArray = @[@"(财富通)"];
+    self.fundSubtitleArray = @[@"(理财宝)"];
     self.fundPercentageArray = @[@"18.0%"];
     self.fundCycleArray = @[@"18个月"];
 }
@@ -128,6 +130,7 @@
     self.financialTableView.dataSource = self;
     [self.scrollView addSubview:self.financialTableView];
     [self.financialTableView registerNib:[UINib nibWithNibName:NSStringFromClass([LKProductListTableViewCell class]) bundle:nil] forCellReuseIdentifier:CellID];
+    [self.financialTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];//去掉多余的cell
     
     //基金
     self.fundTableView = [[UITableView alloc] initWithFrame:CGRectMake(LKScreenW, 0, LKScreenW, LKScreenH-234) style:UITableViewStylePlain];
@@ -135,7 +138,32 @@
     self.fundTableView.dataSource = self;
     [self.scrollView addSubview:self.fundTableView];
     [self.fundTableView registerNib:[UINib nibWithNibName:NSStringFromClass([LKProductListTableViewCell class]) bundle:nil] forCellReuseIdentifier:CellID];
+    [self.fundTableView setTableFooterView:[[UIView alloc] initWithFrame:CGRectZero]];//去掉多余的cell
     
+}
+
+- (void)setUpData
+{
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"category"] = @"";
+    params[@"version"] = VERSION;
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@financingprodlist.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
+        [SVProgressHUD showErrorWithStatus:@"失败"];
+    }];
 }
 
 

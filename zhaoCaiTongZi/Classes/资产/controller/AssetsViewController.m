@@ -12,6 +12,7 @@
 #import "LKTopUpViewController.h"
 #import "LKWithdrawalViewController.h"
 #import "LKRecordViewController.h"
+#import "LKInvestmentManagementViewController.h"
 
 @interface AssetsViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -84,6 +85,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    if (indexPath.row == 0) {
+        LKInvestmentManagementViewController *investmentVC = [[LKInvestmentManagementViewController alloc] init];
+        investmentVC.navigationItem.title = @"我的投资";
+        [self.navigationController pushViewController:investmentVC animated:YES];
+    }
     if (indexPath.row == 1) {
         LKRecordViewController *recordVC = [[LKRecordViewController alloc] init];
         recordVC.navigationItem.title = @"交易记录";

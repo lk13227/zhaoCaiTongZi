@@ -56,17 +56,16 @@
 //验证码网络请求
 - (void)verificationNetWork
 {
-//    [SVProgressHUD showWithMaskType:SVProgressHUDMaskTypeBlack];
     [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
     
     //请求参数
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"mobileNumber"] = self.phoneTextField.text;
-    params[@"version"] = @"1.0";
+    params[@"version"] = VERSION;
     params[@"appName"] = @"financing";
     
     //发送请求
-    [[AFHTTPSessionManager manager] GET:@"http://192.168.1.128:8080/sxwebportal/smsmt.do" parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@smsmt.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -75,8 +74,10 @@
         LKLog(@"------%@",responseObject);
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
         [SVProgressHUD showErrorWithStatus:@"请求验证码失败"];
     }];
+
 }
 
 //添加定时器
@@ -112,6 +113,29 @@
  *  注册事件
  */
 - (IBAction)registeredClick:(UIButton *)sender {
+    
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"mobileNumber"] = self.phoneTextField.text;
+    params[@"version"] = VERSION;
+    params[@"pssword"] = self.passwordTextField.text;
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@financingreg.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
+        [SVProgressHUD showErrorWithStatus:@"注册失败"];
+    }];
+    
 }
 
 

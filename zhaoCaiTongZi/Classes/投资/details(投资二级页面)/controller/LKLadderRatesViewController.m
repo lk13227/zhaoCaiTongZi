@@ -8,6 +8,9 @@
 
 #import "LKLadderRatesViewController.h"
 
+#import <AFNetworking.h>
+#import <SVProgressHUD.h>
+
 #import "progress.h"
 #import "progress1.h"
 #import "progress2.h"
@@ -33,7 +36,9 @@
 {
 //    [self.navigationController.navigationBar setBarTintColor:[UIColor whiteColor]];
 //    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor blackColor],NSForegroundColorAttributeName,nil]];
-//    
+//
+    //隐藏导航栏
+    self.navigationController.navigationBar.hidden = NO;
     [super viewWillAppear:animated];
 }
 
@@ -105,5 +110,28 @@
     
 }
 
+- (void)setUpData
+{
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"pid"] = @"";
+    params[@"version"] = VERSION;
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@preincomerate.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
+        [SVProgressHUD showErrorWithStatus:@"请求失败"];
+    }];
+}
 
 @end

@@ -8,6 +8,9 @@
 
 #import "LKForgotPasswordViewController.h"
 
+#import <SVProgressHUD.h>
+#import <AFNetworking.h>
+
 @interface LKForgotPasswordViewController ()
 
 /** 验证按钮 */
@@ -40,15 +43,67 @@
  *  提交事件
  */
 - (IBAction)submitClick:(UIButton *)sender {
+    
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"mobileNumber"] = self.phoneTextField.text;
+    params[@"pssword"] = self.passwordTextField.text;
+    params[@"version"] = VERSION;
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@forgetpasswd.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
+        [SVProgressHUD showErrorWithStatus:@"请求失败"];
+    }];
 }
 
 /**
  *  验证码事件
  */
 - (IBAction)validationClick:(UIButton *)sender {
+    
+    //验证码网络请求
+    [self verificationNetWork];
+    
     self.index = 60;
     [self addTimer];
 }
+
+- (void)verificationNetWork
+{
+    [SVProgressHUD setDefaultMaskType:SVProgressHUDMaskTypeBlack];
+    
+    //请求参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"mobileNumber"] = self.phoneTextField.text;
+    params[@"version"] = VERSION;
+    params[@"appName"] = @"financing";
+    
+    //发送请求
+    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@smsmt.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        [SVProgressHUD dismiss];
+        
+        LKLog(@"------%@",responseObject);
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LKLog(@"error ===== %@",error);
+        [SVProgressHUD showErrorWithStatus:@"失败"];
+    }];
+}
+
 //添加定时器
 -(void)addTimer
 {

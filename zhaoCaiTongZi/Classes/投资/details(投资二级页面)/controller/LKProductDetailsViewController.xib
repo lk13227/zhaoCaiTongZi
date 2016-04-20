@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LKProductDetailsViewController">
+            <connections>
+                <outlet property="scrollView" destination="oaK-AR-ihe" id="GBn-e3-Kld"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dfS-pZ-ZTr">
+                    <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iia-3I-nOL" userLabel="购买按钮">
+                            <rect key="frame" x="40" y="5" width="520" height="40"/>
+                            <color key="backgroundColor" red="0.96862745100000003" green="0.26274509800000001" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <state key="normal" title="购买">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="20"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="buyClick:" destination="-1" eventType="touchUpInside" id="Sqs-jl-g9Q"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="Iia-3I-nOL" firstAttribute="centerX" secondItem="dfS-pZ-ZTr" secondAttribute="centerX" id="7Df-6e-M4f"/>
+                        <constraint firstAttribute="height" constant="50" id="83V-BN-jVl"/>
+                        <constraint firstItem="Iia-3I-nOL" firstAttribute="leading" secondItem="dfS-pZ-ZTr" secondAttribute="leading" constant="40" id="PO5-zE-jFD"/>
+                        <constraint firstItem="Iia-3I-nOL" firstAttribute="top" secondItem="dfS-pZ-ZTr" secondAttribute="top" constant="5" id="Tm8-An-0tS"/>
+                        <constraint firstItem="Iia-3I-nOL" firstAttribute="centerY" secondItem="dfS-pZ-ZTr" secondAttribute="centerY" id="jUB-xr-aaU"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oaK-AR-ihe">
+                    <rect key="frame" x="0.0" y="64" width="600" height="486"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="dfS-pZ-ZTr" firstAttribute="top" secondItem="oaK-AR-ihe" secondAttribute="bottom" id="7bu-Bm-RKj"/>
+                <constraint firstItem="oaK-AR-ihe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="9nw-i3-gd3"/>
+                <constraint firstItem="dfS-pZ-ZTr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HBo-Kx-ylQ"/>
+                <constraint firstAttribute="trailing" secondItem="dfS-pZ-ZTr" secondAttribute="trailing" id="Kea-8b-WNK"/>
+                <constraint firstItem="oaK-AR-ihe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="P9b-8c-hHn"/>
+                <constraint firstAttribute="trailing" secondItem="oaK-AR-ihe" secondAttribute="trailing" id="Tvl-b5-B9N"/>
+                <constraint firstAttribute="bottom" secondItem="dfS-pZ-ZTr" secondAttribute="bottom" id="o3r-Rj-IFC"/>
+            </constraints>
+            <point key="canvasLocation" x="318" y="375"/>
+        </view>
+    </objects>
+</document>

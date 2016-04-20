@@ -68,6 +68,12 @@
 		AE6515951CC082C0000B2E76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6515941CC082C0000B2E76 /* UIKit.framework */; };
 		AE6515971CC082CC000B2E76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE6515961CC082CC000B2E76 /* Foundation.framework */; };
 		AE65159A1CC08691000B2E76 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = AE6515991CC08691000B2E76 /* Product.m */; };
+		AE711D121CC5CD5F0023F948 /* LKProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE711D101CC5CD5F0023F948 /* LKProductDetailsViewController.m */; };
+		AE711D131CC5CD5F0023F948 /* LKProductDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE711D111CC5CD5F0023F948 /* LKProductDetailsViewController.xib */; };
+		AE711D1A1CC5D4840023F948 /* LKInvestmentManagementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE711D191CC5D4840023F948 /* LKInvestmentManagementViewController.m */; };
+		AE711D1D1CC5E23F0023F948 /* RegularTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AE711D1C1CC5E23F0023F948 /* RegularTool.m */; };
+		AE711D211CC6341A0023F948 /* LKInvestmentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AE711D1F1CC6341A0023F948 /* LKInvestmentTableViewCell.m */; };
+		AE711D221CC6341A0023F948 /* LKInvestmentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AE711D201CC6341A0023F948 /* LKInvestmentTableViewCell.xib */; };
 		AE865D571CB49E62008A8982 /* LKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D561CB49E62008A8982 /* LKTabBarController.m */; };
 		AE865D5A1CB49ED6008A8982 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D591CB49ED6008A8982 /* MyViewController.m */; };
 		AE865D5D1CB49F43008A8982 /* AssetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AE865D5C1CB49F43008A8982 /* AssetsViewController.m */; };
@@ -292,6 +298,16 @@
 		AE6515961CC082CC000B2E76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		AE6515981CC08691000B2E76 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
 		AE6515991CC08691000B2E76 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		AE711D0F1CC5CD5F0023F948 /* LKProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKProductDetailsViewController.h; sourceTree = "<group>"; };
+		AE711D101CC5CD5F0023F948 /* LKProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKProductDetailsViewController.m; sourceTree = "<group>"; };
+		AE711D111CC5CD5F0023F948 /* LKProductDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKProductDetailsViewController.xib; sourceTree = "<group>"; };
+		AE711D181CC5D4840023F948 /* LKInvestmentManagementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKInvestmentManagementViewController.h; sourceTree = "<group>"; };
+		AE711D191CC5D4840023F948 /* LKInvestmentManagementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKInvestmentManagementViewController.m; sourceTree = "<group>"; };
+		AE711D1B1CC5E23F0023F948 /* RegularTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularTool.h; sourceTree = "<group>"; };
+		AE711D1C1CC5E23F0023F948 /* RegularTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularTool.m; sourceTree = "<group>"; };
+		AE711D1E1CC6341A0023F948 /* LKInvestmentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKInvestmentTableViewCell.h; sourceTree = "<group>"; };
+		AE711D1F1CC6341A0023F948 /* LKInvestmentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKInvestmentTableViewCell.m; sourceTree = "<group>"; };
+		AE711D201CC6341A0023F948 /* LKInvestmentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LKInvestmentTableViewCell.xib; sourceTree = "<group>"; };
 		AE865D551CB49E62008A8982 /* LKTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LKTabBarController.h; sourceTree = "<group>"; };
 		AE865D561CB49E62008A8982 /* LKTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LKTabBarController.m; sourceTree = "<group>"; };
 		AE865D581CB49ED6008A8982 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
@@ -466,6 +482,9 @@
 				AE4C957B1CBE377300A578AC /* LKLadderRatesViewController.h */,
 				AE4C957C1CBE377300A578AC /* LKLadderRatesViewController.m */,
 				AE8CAD251CC4A69500386DD3 /* LKLadderRatesViewController.xib */,
+				AE711D0F1CC5CD5F0023F948 /* LKProductDetailsViewController.h */,
+				AE711D101CC5CD5F0023F948 /* LKProductDetailsViewController.m */,
+				AE711D111CC5CD5F0023F948 /* LKProductDetailsViewController.xib */,
 				AE4C95931CBE466300A578AC /* LKBuyViewController.h */,
 				AE4C95941CBE466300A578AC /* LKBuyViewController.m */,
 				AE4C95951CBE466300A578AC /* LKBuyViewController.xib */,
@@ -770,6 +789,42 @@
 			path = Util;
 			sourceTree = "<group>";
 		};
+		AE711D141CC5D4600023F948 /* InvestmentManagement(投资管理) */ = {
+			isa = PBXGroup;
+			children = (
+				AE711D151CC5D4600023F948 /* controller */,
+				AE711D161CC5D4600023F948 /* model */,
+				AE711D171CC5D4600023F948 /* view */,
+			);
+			path = "InvestmentManagement(投资管理)";
+			sourceTree = "<group>";
+		};
+		AE711D151CC5D4600023F948 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AE711D181CC5D4840023F948 /* LKInvestmentManagementViewController.h */,
+				AE711D191CC5D4840023F948 /* LKInvestmentManagementViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AE711D161CC5D4600023F948 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AE711D171CC5D4600023F948 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AE711D1E1CC6341A0023F948 /* LKInvestmentTableViewCell.h */,
+				AE711D1F1CC6341A0023F948 /* LKInvestmentTableViewCell.m */,
+				AE711D201CC6341A0023F948 /* LKInvestmentTableViewCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 		AE865D651CB4A1FA008A8982 /* Category(分类) */ = {
 			isa = PBXGroup;
 			children = (
@@ -974,6 +1029,7 @@
 		AEB1EB8A1CB3BB5200843717 /* 资产 */ = {
 			isa = PBXGroup;
 			children = (
+				AE711D141CC5D4600023F948 /* InvestmentManagement(投资管理) */,
 				AEE16A8C1CB77A030051B0B9 /* TopUp(充值) */,
 				AEE16A901CB77C760051B0B9 /* Withdrawal(提现) */,
 				AE5CB7C61CBCDD3600D00A79 /* record(交易记录,投资升级,资金退出) */,
@@ -1017,6 +1073,8 @@
 				AE865D641CB4A114008A8982 /* LKPrefixHeader.pch */,
 				AE865D711CB4A282008A8982 /* LKConst.h */,
 				AE865D721CB4A282008A8982 /* LKConst.m */,
+				AE711D1B1CC5E23F0023F948 /* RegularTool.h */,
+				AE711D1C1CC5E23F0023F948 /* RegularTool.m */,
 				AE865D651CB4A1FA008A8982 /* Category(分类) */,
 				AEB1EB911CB3BB5200843717 /* controller */,
 				AEB1EB931CB3BB5200843717 /* view */,
@@ -1333,6 +1391,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE711D131CC5CD5F0023F948 /* LKProductDetailsViewController.xib in Resources */,
 				AEE16A9D1CB7955B0051B0B9 /* LKWithdrawalViewController.xib in Resources */,
 				AE5CB7C51CBCD3AF00D00A79 /* LKForgotPasswordViewController.xib in Resources */,
 				AEB1EBA21CB3C02F00843717 /* selectViewController.xib in Resources */,
@@ -1353,6 +1412,7 @@
 				AEB1EB451CB3BA0500843717 /* LaunchScreen.storyboard in Resources */,
 				AE5A25A41CB62C9D00C827BB /* LKFocusViewController.xib in Resources */,
 				AE5CB7B81CBC9CCB00D00A79 /* LKLoginViewController.xib in Resources */,
+				AE711D221CC6341A0023F948 /* LKInvestmentTableViewCell.xib in Resources */,
 				AEB1EB421CB3BA0500843717 /* Assets.xcassets in Resources */,
 				AE865D751CB4B4B9008A8982 /* MyViewController.xib in Resources */,
 				AE5CB7C01CBCC8DC00D00A79 /* LKRegisteredViewController.xib in Resources */,
@@ -1444,6 +1504,7 @@
 				AE65157E1CC07FEF000B2E76 /* NSDataEx.m in Sources */,
 				AE4C95701CBDEE4F00A578AC /* LKTheIdentityAuthenticationViewController.m in Sources */,
 				AEB1EBA11CB3C02F00843717 /* selectViewController.m in Sources */,
+				AE711D121CC5CD5F0023F948 /* LKProductDetailsViewController.m in Sources */,
 				AE4C957D1CBE377300A578AC /* LKLadderRatesViewController.m in Sources */,
 				AE65157D1CC07FEF000B2E76 /* MD5DataSigner.m in Sources */,
 				AE865D571CB49E62008A8982 /* LKTabBarController.m in Sources */,
@@ -1461,6 +1522,7 @@
 				AE5CB7CC1CBCDDF300D00A79 /* LKRecordViewController.m in Sources */,
 				AEB1EB961CB3BB5200843717 /* AppDelegate.m in Sources */,
 				AEE16A971CB780510051B0B9 /* LKTopUpViewController.m in Sources */,
+				AE711D1A1CC5D4840023F948 /* LKInvestmentManagementViewController.m in Sources */,
 				AE865D601CB49F60008A8982 /* InvestmentViewController.m in Sources */,
 				AE49E4691CBF63F7007D92FF /* UIApplication+Extend.m in Sources */,
 				AE65157F1CC07FEF000B2E76 /* openssl_wrapper.m in Sources */,
@@ -1470,12 +1532,14 @@
 				AE4C95961CBE466300A578AC /* LKBuyViewController.m in Sources */,
 				AE49E46E1CBF63F7007D92FF /* NewFeatureScrollView.m in Sources */,
 				AE865D5A1CB49ED6008A8982 /* MyViewController.m in Sources */,
+				AE711D211CC6341A0023F948 /* LKInvestmentTableViewCell.m in Sources */,
 				AE865D631CB4A094008A8982 /* LKNavigationController.m in Sources */,
 				AE4C95661CBDDBCB00A578AC /* LKModifyTheCellPhoneNumberViewController.m in Sources */,
 				AE4C956B1CBDE16D00A578AC /* LKChangeThePasswordViewController.m in Sources */,
 				AE6515811CC07FEF000B2E76 /* RSADataVerifier.m in Sources */,
 				AE5A25AC1CB635D000C827BB /* LKAboutViewController.m in Sources */,
 				AE865D5D1CB49F43008A8982 /* AssetsViewController.m in Sources */,
+				AE711D1D1CC5E23F0023F948 /* RegularTool.m in Sources */,
 				AE8CAD381CC4B78000386DD3 /* progress5.m in Sources */,
 				AEE16A8B1CB75B280051B0B9 /* LKHelpViewController.m in Sources */,
 				AE865D701CB4A1FA008A8982 /* UIView+LKExtension.m in Sources */,
