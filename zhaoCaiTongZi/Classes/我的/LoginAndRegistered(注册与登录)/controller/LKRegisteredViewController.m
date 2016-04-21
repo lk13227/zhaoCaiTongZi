@@ -19,7 +19,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *verificationTextField;
 /** 密码输入框 */
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
-/** 邀请码输入框 */
+/** 确认密码输入框 */
 @property (strong, nonatomic) IBOutlet UITextField *invitationTextField;
 /** 验证按钮 */
 @property (strong, nonatomic) IBOutlet UIButton *verificationBtn;

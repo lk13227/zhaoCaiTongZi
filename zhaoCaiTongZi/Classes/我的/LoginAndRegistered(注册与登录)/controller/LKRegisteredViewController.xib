@@ -180,14 +180,14 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-Xz-NUV" userLabel="邀请码view">
                     <rect key="frame" x="0.0" y="330" width="600" height="50"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yaoqing1" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-UB-of9">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mima1" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-UB-of9">
                             <rect key="frame" x="8" y="5" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="4kc-ZE-3SH"/>
                                 <constraint firstAttribute="width" constant="40" id="yTW-Fj-8j2"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的邀请码" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8mL-kG-WVp" userLabel="邀请码输入框">
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请再次输入您的密码" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8mL-kG-WVp" userLabel="邀请码输入框">
                             <rect key="frame" x="58" y="5" width="532" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="9gT-mj-Qxt"/>
@@ -272,6 +272,7 @@
                 <constraint firstItem="oPM-eB-Khv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="s6Q-eW-hlg"/>
                 <constraint firstItem="EYa-Xz-NUV" firstAttribute="top" secondItem="T7I-7G-MDg" secondAttribute="bottom" id="z3h-ng-Pgn"/>
             </constraints>
+            <point key="canvasLocation" x="329" y="265"/>
         </view>
     </objects>
     <resources>
@@ -280,6 +281,5 @@
         <image name="mima1" width="40" height="40"/>
         <image name="number1" width="40" height="40"/>
         <image name="shouji1" width="40" height="40"/>
-        <image name="yaoqing1" width="40" height="40"/>
     </resources>
 </document>
