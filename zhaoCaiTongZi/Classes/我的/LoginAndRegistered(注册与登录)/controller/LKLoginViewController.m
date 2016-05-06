@@ -63,19 +63,25 @@
     params[@"version"] = VERSION;
     
     //发送请求
-    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@financinglogon.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+    AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
+    
+    manager.requestSerializer=[AFJSONRequestSerializer serializer];
+    manager.responseSerializer.acceptableContentTypes= [NSSet setWithObjects:@"application/json",nil];
+    
+    [manager POST:[NSString stringWithFormat:@"%@financinglogon.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
-        LKLog(@"------%@",responseObject);
+        LKLog(@"%@",responseObject);
         
+        [self dismissViewControllerAnimated:YES completion:nil];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         LKLog(@"error ===== %@",error);
         [SVProgressHUD showErrorWithStatus:@"登录失败"];
     }];
-    
+
 }
 
 /**

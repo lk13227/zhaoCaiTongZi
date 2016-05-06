@@ -32,7 +32,7 @@
     BOOL canShow = [CoreNewFeatureVC canShowNewFeature];
     
     //测试代码，正式版本应该删除
-    canShow = YES;
+    //canShow = YES;
     
     if(canShow){
         

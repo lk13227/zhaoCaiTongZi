@@ -89,7 +89,7 @@
     order.productDescription = @"珑门"; //商品描述
     //order.amount = self.topUpTextField.text; //商品价格
     order.amount = [NSString stringWithFormat:@"%@0000",self.topUpTextField.text]; //商品价格
-    order.notifyURL =  @"www.dragonup.net/index.php/Api/Pay/resuccess"; //回调URL
+    order.notifyURL =  NOTIFYURL; //回调URL
     
     order.service = @"mobile.securitypay.pay";
     order.paymentType = @"1";//支付类型 如 1:支付 2:退款 等

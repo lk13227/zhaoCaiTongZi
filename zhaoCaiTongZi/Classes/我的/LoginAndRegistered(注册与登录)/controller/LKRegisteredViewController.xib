@@ -193,7 +193,7 @@
                                 <constraint firstAttribute="height" constant="40" id="9gT-mj-Qxt"/>
                             </constraints>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                         </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T3-s8-y6M">
                             <rect key="frame" x="0.0" y="49" width="600" height="1"/>

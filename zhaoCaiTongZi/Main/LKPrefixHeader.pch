@@ -33,6 +33,7 @@
 
 #define testURL @"http://192.168.1.128:8080/sxwebportal/"
 #define VERSION [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"]
+#define NOTIFYURL @"www.dragonup.net/index.php/Api/Pay/resuccess"
 
 #define LKScreenH [UIScreen mainScreen].bounds.size.height
 #define LKScreenW [UIScreen mainScreen].bounds.size.width

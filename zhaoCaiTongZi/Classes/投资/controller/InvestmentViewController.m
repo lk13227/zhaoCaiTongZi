@@ -15,6 +15,7 @@
 
 #import "LKProductListTableViewCell.h"
 #import "LKDetailsViewController.h"
+#import "LKBuyViewController.h"
 
 #define CellID @"productList"
 
@@ -152,18 +153,23 @@
     params[@"version"] = VERSION;
     
     //发送请求
-    [[AFHTTPSessionManager manager] POST:[NSString stringWithFormat:@"%@financingprodlist.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
+     AFHTTPSessionManager *manager=[AFHTTPSessionManager manager];
+     
+     manager.requestSerializer=[AFJSONRequestSerializer serializer];
+     manager.responseSerializer.acceptableContentTypes= [NSSet setWithObjects:@"application/json",nil];
+     
+     [manager POST:[NSString stringWithFormat:@"%@financingprodlist.do",testURL] parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         [SVProgressHUD dismiss];
         
-        LKLog(@"------%@",responseObject);
-        
+        LKLog(@"%@",responseObject);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         LKLog(@"error ===== %@",error);
         [SVProgressHUD showErrorWithStatus:@"失败"];
     }];
+
 }
 
 
@@ -234,6 +240,7 @@
         cell.subtitleLabel.text = self.financialSubtitleArray[indexPath.row];
         cell.percentageLabel.text = self.financialPercentageArray[indexPath.row];
         cell.cycleLabel.text = self.financialCycleArray[indexPath.row];
+        [cell.buyButton addTarget:self action:@selector(buyClick) forControlEvents:UIControlEventTouchUpInside];
         
         return cell;
     } else {
@@ -243,6 +250,7 @@
         cell.subtitleLabel.text = self.fundSubtitleArray[indexPath.row];
         cell.percentageLabel.text = self.fundPercentageArray[indexPath.row];
         cell.cycleLabel.text = self.fundCycleArray[indexPath.row];
+        [cell.buyButton addTarget:self action:@selector(buyClick) forControlEvents:UIControlEventTouchUpInside];
         
         return cell;
     }
@@ -259,6 +267,15 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 
+/**
+ *  立即购买
+ */
+- (void)buyClick
+{
+    LKBuyViewController *buyVC = [[LKBuyViewController alloc] init];
+    buyVC.navigationItem.title = @"购买";
+    [self.navigationController pushViewController:buyVC animated:YES];
+}
 
 - (void)viewWillAppear:(BOOL)animated
 {
