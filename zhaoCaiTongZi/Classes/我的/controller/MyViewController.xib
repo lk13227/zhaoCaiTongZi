@@ -17,7 +17,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6B-KL-Mfc">
-                    <rect key="frame" x="20" y="310" width="560" height="40"/>
+                    <rect key="frame" x="20" y="364" width="560" height="40"/>
                     <color key="backgroundColor" red="0.96862745098039216" green="0.30980392156862746" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="K4O-ib-iiS"/>
@@ -36,10 +36,10 @@
                     </connections>
                 </button>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="J6p-ws-OMY">
-                    <rect key="frame" x="0.0" y="64" width="600" height="206"/>
+                    <rect key="frame" x="0.0" y="64" width="600" height="260"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="206" id="OEu-K8-Lu2"/>
+                        <constraint firstAttribute="height" constant="260" id="OEu-K8-Lu2"/>
                     </constraints>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="Ai2-pf-wRl"/>

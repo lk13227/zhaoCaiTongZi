@@ -101,7 +101,7 @@
                 NSFontAttributeName : [UIFont systemFontOfSize:16]};
     self.segmentedControl.selectionIndicatorColor = LKRGBColor(253, 165, 161);
     self.segmentedControl.selectionStyle = HMSegmentedControlSelectionStyleFullWidthStripe;
-    self.segmentedControl.selectionIndicatorHeight = 3;
+    self.segmentedControl.selectionIndicatorHeight = 1;
     self.segmentedControl.selectionIndicatorLocation = HMSegmentedControlSelectionIndicatorLocationDown;
     //中间分割线
     self.segmentedControl.verticalDividerEnabled = YES;
@@ -169,7 +169,7 @@
         LKLog(@"error ===== %@",error);
         [SVProgressHUD showErrorWithStatus:@"失败"];
     }];
-
+    
 }
 
 
@@ -262,7 +262,6 @@
     LKDetailsViewController *detailsVC = [[LKDetailsViewController alloc] init];
     detailsVC.navigationItem.title = @"详情";
     [self.navigationController pushViewController:detailsVC animated:YES];
-    
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }

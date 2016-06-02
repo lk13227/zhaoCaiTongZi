@@ -63,7 +63,7 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKL-AG-InU" userLabel="返回">
-                            <rect key="frame" x="20" y="34" width="16" height="16"/>
+                            <rect key="frame" x="8" y="34" width="16" height="16"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="16" id="2D8-IS-zJy"/>
                                 <constraint firstAttribute="height" constant="16" id="waL-VQ-Ndc"/>
@@ -83,7 +83,7 @@
                         <constraint firstItem="f2T-LK-dcK" firstAttribute="centerY" secondItem="IB4-jG-Igr" secondAttribute="centerY" constant="-10" id="JvQ-8p-i7G"/>
                         <constraint firstItem="C9X-Ye-J3Y" firstAttribute="leading" secondItem="YvZ-HO-odQ" secondAttribute="leading" constant="100" id="Lqn-fE-PBG"/>
                         <constraint firstAttribute="bottom" secondItem="fXv-94-EUh" secondAttribute="bottom" constant="3" id="Ot4-bm-TlD"/>
-                        <constraint firstItem="SKL-AG-InU" firstAttribute="leading" secondItem="YvZ-HO-odQ" secondAttribute="leading" constant="20" id="PKb-Jw-eXb"/>
+                        <constraint firstItem="SKL-AG-InU" firstAttribute="leading" secondItem="YvZ-HO-odQ" secondAttribute="leading" constant="8" id="PKb-Jw-eXb"/>
                         <constraint firstItem="fXv-94-EUh" firstAttribute="trailing" secondItem="qmJ-Th-qtP" secondAttribute="trailing" id="SsT-nF-DOd"/>
                         <constraint firstItem="SKL-AG-InU" firstAttribute="top" secondItem="YvZ-HO-odQ" secondAttribute="top" constant="34" id="UmC-L6-WzS"/>
                         <constraint firstItem="qmJ-Th-qtP" firstAttribute="leading" secondItem="IB4-jG-Igr" secondAttribute="trailing" constant="5" id="frh-9B-jtO"/>
@@ -187,7 +187,7 @@
                         <constraint firstAttribute="bottom" secondItem="Cs9-Fk-BOT" secondAttribute="bottom" constant="5" id="sYH-IR-uN9"/>
                     </constraints>
                 </view>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9O-bk-X7b">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q9O-bk-X7b" userLabel="利率View(已删除)">
                     <rect key="frame" x="0.0" y="384" width="600" height="44"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="投资资金阶梯利率" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93J-QN-b9w">
@@ -255,7 +255,7 @@
                                 <constraint firstAttribute="width" constant="16" id="iPL-vb-jOQ"/>
                             </constraints>
                         </imageView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsS-0Q-BKa">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VsS-0Q-BKa" userLabel="分割线View(已删除)">
                             <rect key="frame" x="66" y="0.0" width="534" height="1"/>
                             <color key="backgroundColor" red="0.70196078431372544" green="0.72156862745098038" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
@@ -327,7 +327,7 @@
                 <constraint firstAttribute="trailing" secondItem="YvZ-HO-odQ" secondAttribute="trailing" id="xAO-7m-XzB"/>
                 <constraint firstAttribute="trailing" secondItem="WWM-UV-ojO" secondAttribute="trailing" id="xgr-xL-fhF"/>
             </constraints>
-            <point key="canvasLocation" x="512" y="242"/>
+            <point key="canvasLocation" x="520" y="226"/>
         </view>
     </objects>
     <resources>

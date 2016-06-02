@@ -39,7 +39,7 @@
         button.titleLabel.font = [UIFont systemFontOfSize:16];
         [button setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [button setTitleColor:[UIColor redColor] forState:UIControlStateHighlighted];
-        [button setImage:[UIImage imageNamed:@"arrow@2x"] forState:UIControlStateNormal];
+        [button setImage:[UIImage imageNamed:@"返回.png"] forState:UIControlStateNormal];
         //[button setImage:[UIImage imageNamed:@"navigationButtonReturnClick"] forState:UIControlStateHighlighted];
         //        [button sizeToFit];
         button.size = CGSizeMake(70, 30);

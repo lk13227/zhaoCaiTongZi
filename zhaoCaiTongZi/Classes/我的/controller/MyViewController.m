@@ -35,8 +35,8 @@
     //设置背景颜色
     self.view.backgroundColor = LKGlobalBg;
     
-    self.titleArray = @[@[@"我的账户"],@[@"了解童子"],@[@"帮助中心",@"关注我们"]];
-    self.titleImageArray = @[@[@"ct1"],@[@"ct2"],@[@"ct3",@"ct4"]];
+    self.titleArray = @[@[@"我的账户"],@[@"了解童子"],@[@"帮助中心",@"关注我们"],@[@"风控模式"]];
+    self.titleImageArray = @[@[@"ct1"],@[@"ct2"],@[@"ct3",@"ct4"],@[@"ct1"]];
     
     //注册tableviewCell
     self.myTableView.scrollEnabled = NO;
@@ -80,13 +80,15 @@
         return 1;
     } else if (section == 2) {
         return 2;
+    } else if (section == 3) {
+        return 1;
     }
     return 0;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 3;
+    return 4;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

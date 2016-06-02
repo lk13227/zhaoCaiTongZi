@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LKRegisteredViewController">
@@ -26,7 +26,7 @@
                         <constraint firstAttribute="width" constant="32" id="VVm-BT-BFB"/>
                         <constraint firstAttribute="height" constant="32" id="lIW-Xg-6fJ"/>
                     </constraints>
-                    <state key="normal" image="back"/>
+                    <state key="normal" image="返回"/>
                     <connections>
                         <action selector="backClick" destination="-1" eventType="touchUpInside" id="hoq-nB-r3j"/>
                     </connections>
@@ -180,21 +180,13 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EYa-Xz-NUV" userLabel="邀请码view">
                     <rect key="frame" x="0.0" y="330" width="600" height="50"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mima1" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-UB-of9">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yaoqing1" translatesAutoresizingMaskIntoConstraints="NO" id="ibt-UB-of9">
                             <rect key="frame" x="8" y="5" width="40" height="40"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="40" id="4kc-ZE-3SH"/>
                                 <constraint firstAttribute="width" constant="40" id="yTW-Fj-8j2"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请再次输入您的密码" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8mL-kG-WVp" userLabel="邀请码输入框">
-                            <rect key="frame" x="58" y="5" width="532" height="40"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="40" id="9gT-mj-Qxt"/>
-                            </constraints>
-                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                        </textField>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6T3-s8-y6M">
                             <rect key="frame" x="0.0" y="49" width="600" height="1"/>
                             <color key="backgroundColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -202,6 +194,14 @@
                                 <constraint firstAttribute="height" constant="1" id="ZHY-h3-VC9"/>
                             </constraints>
                         </view>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的金服经纪人邀请码" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="8mL-kG-WVp" userLabel="邀请码输入框">
+                            <rect key="frame" x="58" y="5" width="532" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="9gT-mj-Qxt"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
@@ -277,9 +277,10 @@
     </objects>
     <resources>
         <image name="@8.jpg" width="40" height="40"/>
-        <image name="back" width="32" height="32"/>
         <image name="mima1" width="40" height="40"/>
         <image name="number1" width="40" height="40"/>
         <image name="shouji1" width="40" height="40"/>
+        <image name="yaoqing1" width="40" height="40"/>
+        <image name="返回" width="16" height="16"/>
     </resources>
 </document>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LKLoginViewController">
@@ -183,7 +183,7 @@
                         <constraint firstAttribute="width" constant="32" id="dP9-Ja-5hx"/>
                         <constraint firstAttribute="height" constant="32" id="xZ9-Od-8Ig"/>
                     </constraints>
-                    <state key="normal" image="back"/>
+                    <state key="normal" image="返回"/>
                     <connections>
                         <action selector="backClick:" destination="-1" eventType="touchUpInside" id="68x-Bp-fce"/>
                     </connections>
@@ -215,8 +215,8 @@
     </objects>
     <resources>
         <image name="@8.jpg" width="32" height="32"/>
-        <image name="back" width="32" height="32"/>
         <image name="mima1" width="40" height="40"/>
         <image name="shouji1" width="40" height="40"/>
+        <image name="返回" width="16" height="16"/>
     </resources>
 </document>
